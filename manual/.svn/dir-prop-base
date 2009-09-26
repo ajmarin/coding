@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 30
+*.pdf
+*.aux
+*.log
+*.toc
+*.out
+
+END

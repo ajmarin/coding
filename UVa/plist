@@ -1,0 +1,309 @@
+100 - The 3n + 1 problem
+101 - The Blocks Problem
+102 - Ecological Bin Packing
+103 - Stacking Boxes
+104 - Arbitrage
+105 - The Skyline Problem
+106 - Fermat vs. Pythagoras
+107 - The Cat in the Hat
+108 - Maximum Sum
+111 - History Grading
+112 - Tree Summing
+113 - Power of Cryptography
+114 - Simulation Wizardry
+116 - Unidirectional TSP
+117 - The Postal Worker Rings Once
+118 - Mutant Flatworld Explorers
+119 - Greedy Gift Givers
+120 - Stacks of Flapjacks
+121 - Pipe Fitters
+123 - Searching Quickly
+128 - Software CRC
+130 - Roman Roulette
+133 - The Dole Queue
+136 - Ugly Numbers
+138 - Street Numbers
+140 - Bandwidth
+146 - ID Codes
+147 - Dollars
+151 - Power Crisis
+154 - Recycling
+156 - Ananagrams
+160 - Factors and Factorials
+167 - The Sultan's Successors
+170 - Clock Patience
+181 - Hearts
+186 - Trip Routing
+187 - Transaction Processing
+190 - Circle Through Three Points
+195 - Anagram
+200 - Rare Order
+231 - Testing the CATCHER
+256 - Quirksome Squares
+264 - Count on Cantor
+272 - TEX Quotes
+278 - Chess
+291 - The House Of Santa Claus
+294 - Divisors
+297 - Quadtrees
+299 - Train Swapping
+305 - Joseph
+315 - Network
+324 - Factorial Frequencies
+336 - A Node Too Far
+344 - Roman Digititis
+350 - Pseudo-Random Numbers
+352 - The Seasonal War
+357 - Let Me Count The Ways
+369 - Combinations
+371 - Ackermann Functions
+374 - Big Mod
+380 - Call Forwarding
+382 - Perfection
+383 - Shipping Routes
+386 - Perfect Cubes
+392 - Polynomial Showdown
+400 - Unix ls
+401 - Palindromes
+406 - Prime Cuts
+408 - Uniform Generator
+412 - Pi
+414 - Machined Surfaces
+417 - Word Index
+424 - Integer Inquiry
+437 - The Tower of Babylon
+438 - The Circumference of the Circle
+439 - Knight Moves
+440 - Eeny Meeny Moo
+441 - Lotto
+443 - Humble Numbers
+444 - Encoder and Decoder
+445 - Marvelous Mazes
+446 - Kibbles "n" Bits "n" Bits "n" Bits
+458 - The Decoder
+459 - Graph Connectivity
+476 - Points in Figures: Rectangle
+477 - Points in Figures: Rectangles and Circles
+478 - Points in Figures: Rectangles, Circles, Triangles
+481 - What Goes Up
+483 - Word Scramble
+484 - The Department of Redundancy Department
+485 - Pascal's Triangle of Death
+488 - Triangle Wave
+489 - Hangman Judge
+490 - Rotating Sentences
+492 - Pig-Latin
+494 - Kindergarten Counting Game
+495 - Fibonacci Freeze
+496 - Simply Subsets
+497 - Strategic Defense Initiative
+499 - What's The Frequency, Kenneth?
+530 - Binomial Showdown
+531 - Compromise
+536 - Tree Recovery
+541 - Error Correction
+543 - Goldbach's Conjecture
+562 - Dividing Coins
+568 - Just the Facts
+572 - Oil Deposits
+573 - The Snail
+575 - Skew Binary
+576 - Haiku Review
+579 - ClockHands
+583 - Prime Factor
+591 - Box of Bricks
+594 - One Little, Two Little, Three Little Endians
+621 - Secret Research
+623 - 500!
+640 - Self Numbers
+663 - Sorting Slides
+673 - Parentheses Balance
+674 - Coin Change
+675 - Convex Hull of the Polygon
+686 - Goldbach's Conjecture (II)
+694 - The Collatz Sequence
+706 - LCD Display
+713 - Adding Reversed Numbers
+756 - Biorhythms
+820 - Internet Bandwidth
+821 - Page Hopping
+834 - Continued Fractions
+846 - Steps
+847 - A Multiplication Game
+895 - Word Problem
+913 - Joana and the Odd Numbers
+948 - Fibonaccimal Base
+993 - Product of digits
+10000 - Longest Paths
+10003 - Cutting Sticks
+10004 - Bicoloring
+10006 - Carmichael Numbers
+10008 - What's Cryptanalysis?
+10009 - All Roads Lead Where?
+10010 - Where's Waldorf?
+10013 - Super long sums
+10015 - Joseph's Cousin
+10018 - Reverse and Add
+10019 - Funny Encryption Method
+10032 - Tug Of War
+10033 - Interpreter
+10034 - Freckles
+10035 - Primary Arithmetic
+10038 - Jolly Jumpers
+10041 - Vito's Family
+10044 - Erdos Numbers
+10050 - Hartals
+10055 - Hashmat the Brave Warrior
+10062 - Tell me the frequencies!
+10066 - The Twin Towers
+10070 - Leap Year or Not Leap Year and ...
+10071 - Back to High School Physics
+10077 - The Stern-Brocot Number System
+10079 - Pizza Cutting
+10080 - Gopher II
+10082 - WERTYU
+10098 - Generating Fast
+10099 - The Tourist Guide
+10104 - Euclid Problem
+10106 - Product
+10107 - What is the Median?
+10110 - Light, more light
+10127 - Ones
+10131 - Is Bigger Smarter?
+10137 - The Trip
+10142 - Australian Voting
+10161 - Ant on a Chessboard
+10189 - Minesweeper
+10192 - Vacation
+10193 - All You Need Is Love
+10195 - The Knights Of The Round Table
+10196 - Check The Check
+10201 - Adventures in Moving - Part IV
+10205 - Stack 'em Up
+10209 - Is This Integration ?
+10220 - I Love Big Numbers !
+10222 - Decode the Mad man
+10223 - How many nodes ?
+10235 - Simply Emirp
+10245 - The Closest Pair Problem
+10252 - Common Permutation
+10260 - Soundex
+10267 - Graphical Editor
+10276 - Hanoi Tower Troubles Again!
+10285 - Longest Run on a Snowboard
+10290 - {Sum+=i++} to Reach N
+10295 - Hay Points
+10300 - Ecological Premium
+10301 - Rings and Glue
+10302 - Summation of Polynomials
+10305 - Ordering Tasks
+10315 - Poker Hands
+10323 - Factorial! You Must be Kidding!!!
+10324 - Zeros and Ones
+10327 - Flip Sort
+10330 - Power Transmission
+10338 - Mischievous Children
+10340 - All in All
+10346 - Peter's Smoke
+10361 - Automatic Poetry
+10370 - Above Average
+10405 - Longest Common Subsequence
+10408 - Farey sequences
+10409 - Die Game
+10420 - List of Conquests
+10424 - Love Calculator
+10432 - Polygon Inside A Circle
+10450 - World Cup Noise
+10469 - To Carry or not to Carry
+10473 - Simple Base Conversion
+10499 - The Land of Justice
+10509 - R U Kidding Mr. Feynman!
+10515 - Powers Et Al.
+10530 - Guessing Game
+10534 - Wavio Sequence
+10550 - Combination Lock
+10579 - Fibonacci Numbers
+10591 - Happy Number
+10642 - Can You Solve It?
+10664 - Luggage
+10684 - The jackpot
+10696 - f91
+10699 - Count the factors
+10701 - Pre, in and post
+10703 - Free spots
+10714 - Ants
+10783 - Odd Sum
+10789 - Prime Frequency
+10812 - Beat the Spread!
+10852 - Less Prime
+10878 - Decode the tape
+10921 - Find the Telephone
+10924 - Prime Words
+10929 - You can say 11
+10931 - Parity
+10945 - Mother bear
+10970 - Big Chocolate
+11000 - Bee
+11044 - Searching for Nessy
+11045 - My T-shirt suits me
+11067 - Little Red Riding Hood
+11069 - A Graph Problem
+11082 - Matrix Decompressing
+11121 - Base -2
+11137 - Ingenuous Cubrency
+11172 - Relational Operator
+11185 - Ternary
+11192 - Group Reverse
+11207 - The easiest way
+11219 - How old are you?
+11220 - Decoding the message.
+11222 - Only I did it!
+11233 - Deli Deli
+11244 - Counting Stars
+11332 - Summing Digits
+11364 - Parking
+11369 - Shopaholic
+11371 - Number Theory for Newbies
+11387 - The 3-Regular Graph
+11388 - GCD LCM
+11401 - Triangle Counting
+11408 - Count DePrimes
+11417 - GCD
+11428 - Cubes
+11452 - Dancing the Cheeky-Cheeky
+11455 - Behold my quadrangle
+11461 - Square Numbers
+11462 - Age Sort
+11470 - Square Sums
+11479 - Is this the easiest problem?
+11480 - Jimmy's Balls
+11489 - Integer Game
+11491 - Erasing and Winning
+11492 - Babel
+11493 - The Club Ballroom
+11494 - Queen
+11495 - Bubbles and Buckets
+11496 - Musical Loop
+11498 - Division of Nlogonia
+11500 - Vampires
+11505 - Logo
+11507 - Bender B. Rodríguez Problem
+11508 - Life on Mars?
+11519 - Logo 2
+11530 - SMS Typing
+11541 - Decoding
+11547 - Automatic Answer
+11554 - Hapless Hedonism
+11556 - Best Compression Ever
+11565 - Simple Equations
+11567 - Moliu Number Generator
+11610 - Reverse Prime
+11658 - Best Coalitions
+11666 - Logarithms
+11660 - Look-and-Say sequences
+11661 - Burger Time?
+11677 - Alarm Clock
+11678 - Cards' Exchange
+11679 - Sub-prime
+11680 - Dragster
+11683 - Laser Sculpture

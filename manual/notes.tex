@@ -1,0 +1,315 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=false,
+	linkbordercolor={1 1 1},
+	citebordercolor={1 1 1}
+}
+\usepackage{listings}
+\lstset{language=C++,
+	basicstyle=\footnotesize,
+	showstringspaces=false,
+	tabsize=4,
+	numbers=left,
+	numberstyle=\tiny,
+	stepnumber=1,
+	numbersep=5pt,
+	breaklines=true,
+	extendedchars=true,
+	frame=tb
+}
+
+\title{sudo make a manual}
+\author{sudo make a sandwich}
+
+\begin{document}
+	\twocolumn
+	\maketitle
+	\tableofcontents
+	\onecolumn
+
+	\section{Utilidades}
+		\subsection{.vimrc}
+			\lstinputlisting{misc/vimrc}
+		\subsection{Makefile}
+			\lstinputlisting{misc/Makefile}
+		\subsection{Template}
+			\lstinputlisting{algoritmos/template.cpp}
+	
+	\section{Estruturas de Dados}
+		\subsection{Heap Binário}
+			Tempo: \( O(\log n) \) em todas as operações.
+			\lstinputlisting{algoritmos/heap.cpp}
+		\subsection{Union-Find}
+			Tempo: \( O(\alpha(n)) \) em todas as operações.
+			\lstinputlisting{algoritmos/union-find.cpp}
+		\subsection{Fenwick Tree}
+			Tempo: \( O(\log n) \) em todas as operações
+			\lstinputlisting{algoritmos/fenwick.cpp}
+
+	\section{Ordenação}
+		\subsection{Merge Sort}
+			\lstinputlisting{algoritmos/mergesort.cpp}
+		\subsection{Quicksort}
+			\lstinputlisting{algoritmos/quicksort.cpp}
+	
+	\section{Matemática}
+		\subsection{Bigmod}
+			Propriedade:
+			\[ (A \cdot B \cdot C) \bmod N = ((A \bmod N) \cdot (B \bmod N) \cdot (C \bmod N)) \bmod N \]
+			\[ r = b^p \bmod m \]
+			\lstinputlisting{algoritmos/bigmod.cpp}
+		\subsection{Long Integer}
+			\lstinputlisting{algoritmos/bignum.cpp}
+		\subsection{Sieve de Números Primos}
+			\lstinputlisting{algoritmos/sieve.cpp}
+		\subsection{GCD e LCM}
+			\lstinputlisting{algoritmos/gcdlcm.cpp}
+		\subsection{Algoritmo de Euclides}
+			\lstinputlisting{algoritmos/euclides.cpp}
+		\subsection{Combinação}
+			\[ C_n^k = {n! \over {k! \cdot (n - k)!}} \]
+			\lstinputlisting{algoritmos/comb.cpp}
+		\subsection{Floyd's Cycle-Finding}
+			\lstinputlisting{algoritmos/floydcycle.cpp}
+		\subsection{Matrizes}
+			\subsubsection{Decomposição LUP}
+				Determina uma decomposição LUP para a matriz \(A\): \( PA = LU \)
+				Tempo: \( \Theta(n^3) \)
+				\lstinputlisting{algoritmos/lup-decomposition.cpp}
+			\subsubsection{Determinante}
+				\lstinputlisting{algoritmos/determinante.cpp}
+			\subsubsection{Sistemas Lineares}
+				Resolve um sistema de equações lineares da forma \(Ax = B\)
+				\lstinputlisting{algoritmos/sistlinear.cpp}
+
+	\section{Grafos}
+		\subsection{Strongly Connected Components}
+			\subsubsection{Kosaraju}
+				Tempo: \( O(V + E) \)
+				\lstinputlisting{algoritmos/kosaraju.cpp}
+			\subsubsection{Tarjan}
+				\lstinputlisting{algoritmos/tarjan.cpp}
+		\subsection{Caminho mínimo}
+			\subsubsection{Floyd-Warshall}
+				Tempo: \( \Theta(n^3)\)
+				\lstinputlisting{algoritmos/floyd-warshall.cpp}
+			\subsubsection{Dijkstra}
+				Tempo: \( O(|V|^2) \)
+				\lstinputlisting{algoritmos/dijkstra.cpp}
+			\subsubsection{Dijkstra com Heap}
+				Tempo: \( O((|E| + |V|) \log |V|) \)
+				\lstinputlisting{algoritmos/dijkstra-heap.cpp}
+			\subsubsection{Bellman-Ford}
+				Tempo: \( O(|V| |E|) \)
+				\lstinputlisting{algoritmos/bellman-ford.cpp}
+		\subsection{Kruskal}
+			Tempo: \( O(|E| \log |V|) \) ou \( O(|E| \cdot \alpha(|V|)) \) caso as arestas estejam pré-ordenadas.
+			\lstinputlisting{algoritmos/kruskal.cpp}
+		\subsection{Fluxo Máximo e Corte Mínimo}
+			\subsubsection{Edmonds-Karp}
+				Tempo: \( O(|V| |E|^2) \)
+				\lstinputlisting{algoritmos/ford-fulkerson.cpp}
+			\subsubsection{Stoer-Wagner}
+				Algoritmo para encontrar o corte mínimo (não s-t) em um grafo. A implementação abaixo é \(O(n^3)\).
+				\lstinputlisting{algoritmos/stoer-wagner.cpp}
+			\subsubsection{Min-Cost Max-Flow}
+				Tempo: \( O(min(n^2 m \cdot fcost, ~ n m \cdot flow) ) \)
+				\lstinputlisting{algoritmos/mincostmaxflow.cpp}
+			\subsubsection{Kuhn-Munkres}
+				Dado um grafo completo bipartido com pesos $ G = (X \cup Y, X \times Y) $, encontra um matching $M$ de $X$ para $Y$ com peso total máximo. Para encontrar com peso mínimo, basta negar todos os custos.
+
+				Tempo: \( O(n^3) \)
+				\lstinputlisting{algoritmos/kuhn-munkres.cpp}
+		\subsection{Hopcroft-Karp}
+			Tempo: \( O(|E| \sqrt{|V|})\)
+			\lstinputlisting{algoritmos/hopcroft-karp.cpp}
+		\subsection{Aresta de Corte}
+			Para grafos não-dirigidos.
+			\lstinputlisting{algoritmos/bridge.cpp}
+		\subsection{Ponto de Articulação}
+			Para grafos não-dirigidos.
+			\lstinputlisting{algoritmos/pontoart.cpp}
+		\subsection{Lowest Common Ancestor}
+			Tempo: \( O(V + Q + \alpha(V + Q)) \)
+			\lstinputlisting{algoritmos/lca.cpp}
+		\subsection{Ciclo Euleriano}
+			\lstinputlisting{algoritmos/ciclo-euleriano.cpp}
+		\subsection{Fatos Interessantes}
+			\begin{enumerate}
+				\item Um grafo é bipartido se e somente se não tem ciclo ímpar.
+				\item \textbf{Teorema de Euler}. Para qualquer grafo planar, \( V - E + F = 1 + C \), onde \(V\) é o número de vértices do grafo, \(E\) é o número de arestas, \(F\) é o número de faces do grafo em um desenho planar e \(C\) é o número de componentes conexas.
+				\item \textbf{Teorema de Kirchhoff}. Seja a matriz \( T = [ t_{ij} ] \), onte \( t_{ij} \) é o número de arestas entre \(i\) e \(j\), para \( i \neq j \), e \( t_{ii} = - deg_i \). O número de árvores geradoras de um grafo é igual ao determinante de uma matriz obtida ao deletar qualquer \emph{k}-ésima linha e \emph{k}-ésima coluna de \(T\).
+				\item \textbf{Ciclo Euleriano}. Um grafo não-dirigido possui ciclo euleriano se todos os vértices têm grau par e o \emph{grafo é conexo}. Um grafo dirigido admite caso $in[v] = out[v] ~ \forall ~ v \in V$.
+				\item \textbf{Caminho Euleriano}. Um grafo não-dirigido possui caminho euleriano se apenas dois vértices tem grau ímpar e o \emph{grafo é conexo}.
+				\begin{enumerate}
+					\item \textbf{Algoritmo de Fleury}. Usado para gerar um caminho euleriano. Escolha um dos dois nós pares como nó inicial e visite-o, escolha sempre uma aresta que não seja uma ponte no grafo reduzido (a não ser que não exista outra alternativa), atravesse a aresta escolhida e visite o nó seguinte.
+				\end{enumerate}
+				\item \textbf{Teorema de Erdös-Gallai}. Dada uma seqüência de $n$ inteiros $\{d_1, d_2, \ldots, d_n\}$, com $n-1 \geq d_1 \geq d_2 \geq \ldots \geq d_n \geq 0$. Os números da seqüência podem representar os graus dos vértices de um grafo simples não-dirigido \emph{sse} $\sum d_i$ for par e $d_1 + \ldots + d_k \leq k (k - 1) + \sum_{i=k+1}^n \min(k, d_i)$ para todo $k = 1, 2, \ldots, n - 1$.
+				\item \textbf{Teorema de Menger}. % TODO
+			\end{enumerate}
+
+	\section{Programação Dinâmica}
+		% TODO: colocar mais
+		\subsection{Longest Common Subsequence}
+			Tempo: \( O(nm) \)
+			\lstinputlisting{algoritmos/lcs.cpp}
+		\subsection{Longest Increasing Subsequence}
+			Tempo: \( O(n \log n) \)
+			\lstinputlisting{algoritmos/lis.cpp}
+		\subsection{Smallest Common Supersequence}
+			% TODO
+		\subsection{Matrix-chain Multiplication}
+			Tempo: \( O(n^3) \)
+			\lstinputlisting{algoritmos/arraymultiplication.cpp}
+		\subsection{0-1 Knapsack}
+			% TODO
+		\subsection{CYK}
+			Tempo: \( O(n^3) \)
+			% TODO	
+	\section{Geometria Computacional}
+		\lstinputlisting{algoritmos/geometry-defs.cpp}
+		\subsection{Círculos}
+			\lstinputlisting{algoritmos/circle.cpp}
+		\subsection{Intersecção de Segmentos}
+			\lstinputlisting{algoritmos/segments-intersect.cpp}
+		\subsection{Ponto dentro de Polígono}
+			% TODO: funciona para quais poligonos? simples? concavos? só pra convexos? os pontos do poligono devem ser dados em alguma ordem?
+			Constante de tempo baixa, não faz uso de funções de trigonometria. Retorna \emph{true} se o ponto está sob um dos lados do polígono (facilmente alterável).
+			\lstinputlisting{algoritmos/inpoly1.cpp}
+		\subsection{Teste de Convexidade}
+			Algoritmo para testar se um polígono é convexo ou não.
+			% TODO: só pegar do UVa 10078 e dizer pra qual tipo de polígono funcionam, etc
+		\subsection{Área de um Polígono}
+			% TODO: conferir, essas duas funções são, provavelmente, a mesma merda
+			\subsubsection{Convexo}
+				Se o polígono está no sentido anti-horário, a área é positiva. Se estiver no sentido horário, a área é negativa.
+				\lstinputlisting{algoritmos/convex-area.cpp}
+			\subsubsection{Qualquer}
+				\lstinputlisting{algoritmos/poly-area.cpp}
+		\subsection{Convex Hull}
+			\subsubsection{Graham Scan}
+				Tempo: \(O(n \log n)\)
+				\lstinputlisting{algoritmos/graham-scan.cpp}
+			\subsubsection{Jarvis March}
+				Tempo: \(O(n h)\)
+				\lstinputlisting{algoritmos/jarvis-march.cpp}
+		\subsection{Closest Pair of Points}
+			\lstinputlisting{algoritmos/closest-pair.cpp}
+
+	\section{Outros}
+		\subsection{2-SAT}
+			\[ (a_1 \vee a_2) \wedge (b_1 \vee b_2) \wedge \ldots \wedge (z_1 \vee z_2) \]
+			Para determinar se uma fórmula com duas literais por cláusula é satisfazível, basta:
+			\begin{enumerate}
+				\item Trocar cada cláusula $ (x_1 \vee x_2) $ por $ (\neg x_1 \rightarrow x_2) \wedge (\neg x_2 \rightarrow x_1) $.
+				\item Criar um grafo $G$:
+				\begin{enumerate}
+					\item Para cada literal $x$, criar um nó $x$ e $\neg x$.
+					\item Para cada cláusula $ (a \rightarrow b) $, criar uma aresta $(a, b)$ no grafo.
+				\end{enumerate}
+				\item Encontrar \emph{SCC} do grafo $G$.
+				\item Se todo literal $x$ estiver em uma \emph{SCC} diferente de $\neg x$, a formula é satisfazível.
+			\end{enumerate}
+			Caso exista uma cláusula com apenas um literal $x$, basta trocá-la por $(1 \vee x)$ e, portanto, criar os nós $0$ e $1$ e as arestas:
+			\begin{enumerate}
+				\item $(0, 1)$.
+				\item $(0, a)$, $(0, \neg a)$, $(a, 1)$ e $(\neg a, 1)$ para \emph{todos} os literais $a$ da fórmula.
+				\item Obviamente, $(1, x)$ e $(\neg x, 0)$.
+			\end{enumerate}
+		\subsection{Sist. de restrições de diferenças}
+			Dado um sistema de $n$ incógnitas $x_i$ ($1 \leq i \leq n$) com $m$ inequações na forma $ x_j - x_i \leq b_k $, modela-se um grafo com $V = \{v_0, v_1, \ldots, v_n\} $, uma aresta $(v_i, v_j)$ para cada inequação $x_j - x_i \leq b_k$, com $w(v_i, v_j) = v_k$ e uma aresta $(v_0, v_i)$, com $w(v_0, v_i) = 0$ para cada $v_i \in V - \{v_0\}$.
+			
+			Por fim, rodar Bellman-Ford no grafo construído, caso existam ciclos negativos, não há solução para o sistema. Caso não existam ciclos negativos, uma solução factível para o sistema é $(x_1 = \delta(v_0, v_1), x_2 = \delta(v_0, v_1), \ldots, x_n = \delta(v_0, v_n))$.
+
+			O algoritmo minimiza $\sum_{i=1}^n x_i$ e $\max\{x_i\} - \min\{x_i\}$, sujeito às restrições e $x_i \leq 0$.
+
+			Mais informações no Cormen, p. 602.
+		\subsection{Kadane 1D}
+			Tempo: \(\Theta(n)\)
+			\lstinputlisting{algoritmos/kadane1d.cpp}
+		\subsection{Kadane 2D}
+			Tempo: \(O(n^3)\)
+			\lstinputlisting{algoritmos/kadane2d.cpp}
+		\subsection{Majority Problem}
+			Encontra o elemento que aparece em mais da metade de um array em \(\Theta(n)\)
+			\lstinputlisting{algoritmos/majority.cpp}
+		\subsection{Stable Marriage}
+			Given $n$ men and $n$ women, where each person has ranked all members of the opposite sex with a unique number between $1$ and $n$ in order of preference, marry the men and women off such that there are no two people of opposite sex who would both rather have each other than their current partners. If there are no such people, all the marriages are \emph{stable}.
+			\subsubsection{Gale-Shapley}
+				Tempo: \(O(n^2)\)
+				\lstinputlisting{algoritmos/stablemarriage.cpp}
+		\subsection{Números Romanos}
+			\lstinputlisting{algoritmos/romanos.cpp}
+		\subsection{Calendário}
+			\lstinputlisting{algoritmos/calendario.cpp}
+		\subsection{Josephus Problem}
+			\lstinputlisting{algoritmos/josephus.cpp}
+	\section{Containers STL}
+		% TODO: colocar tabela fera igual a do cplusplus.com
+
+	\twocolumn
+	\section{Formulário}
+		% TODO: roubar fórmulas daquele manual russo (outras coisas alem de formulas tb, se essa section ainda for existir)
+		% TODO: colocar teorema master
+		\subsection{Somatórios}
+			\[ \sum_{k = 1}^{n} k = \frac{n \cdot (n + 1)}{2} \]
+			\[ \sum_{k = 1}^{n} k^2 = \frac{n \cdot (n + 1) \cdot (2n + 1)}{6} \]
+			\[ \sum_{k = 1}^{n} k^3 = \bigg[\frac{n \cdot (n + 1)}{2}\bigg]^2 \]
+		\subsection{Geometria}
+			\subsubsection{Triângulos}
+				\emph{Área, dados lados a, b, c}
+				\[ S = \sqrt{p (p - a) (p - b) (p - c)} \]
+				\[ p = \frac{a + b + c}{2} \]
+				\emph{Área, dadas medianas u, v, w}
+				\[ S = \frac{4}{3} \sqrt{q (q - u) (q - v) (q - w)} \]
+				\[ q = \frac{u + v + w}{2} \]
+
+	\onecolumn
+	\section{Troubleshooting}
+		\subsection{Erros Comuns}
+			\begin{enumerate}
+				\item \textbf{Overflow}?
+				\item \textbf{Inicializar} todas as variáveis.
+				\item Verificar \textbf{iteradores} de todos os fors.
+				\item Verificar \textbf{limites de arrays}.
+				\item Modificando container STL enquanto iterando sobre ele? Cuidado!
+				\item \emph{Nunca} fazer $strcmp == -1$, sempre $strcmp < 0$!
+				\item Tem alguma função que era pra retornar algo que não tá retornando nada? Cuidado, C++ não reclama da falta de $return$!
+			\end{enumerate}
+			\subsubsection{Wrong Answer}
+				\begin{enumerate}
+					\item Overflow?
+					\item As variáveis estão todas sendo inicializadas/zeradas? O programa dá a mesma resposta para casos repetidos?
+					\item Array pequeno demais? Programa pode estar escrevendo no endereço de memória de outra variável e fazendo algo bizarro.
+				\end{enumerate}
+			\subsubsection{Runtime Error}
+				\begin{enumerate}
+					\item Dividiu por zero? Fez módulo por zero?
+					\item Array out of bounds?
+					\item Arrays grandes demais? Usando memória demais?
+					\item Função recursiva que não termina nunca?
+					\item Stack overflow? Arrays grandes demais? Colocar os arrays gigantes como globais, nunca locais.
+					\item Alocando memória sem liberar? Memory leak?
+				\end{enumerate}
+			\subsubsection{Time Limit Exceeded}
+				\begin{enumerate}
+					\item Loop infinito?
+					\item Evitar recálculo (i/w, i\%w)
+					\item Usando STL desnecessariamente?
+					\item Descubra qual parte do codigo demora mais.
+				\end{enumerate}
+		\subsection{Grafos}
+			\begin{enumerate}
+				\item O grafo é dirigido?
+				\item O grafo pode ser desconexo?
+				\item O grafo possui arestas paralelas? Arestas repetidas? Arestas $(v_i,v_i)$?
+				\item As arestas podem ter pesos negativos?
+				\item Dá pra otimizar o Dijkstra? Usar heap no braço? Alguma heurística pra transformar em A*?
+				\item Zerou $deg[]$, $vis[]$, etc?
+			\end{enumerate}
+\end{document}
