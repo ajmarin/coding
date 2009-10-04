@@ -1,12 +1,26 @@
 #include <cstdio>
+#include <cctype>
 #include <cstring>
 
 #define NN 10058
 #define FOR(a,b) for(int a = 0; a < b; ++a)
+#define IN getc( stdin )
 
 int c[NN], p[NN], q[NN], s[NN], x[NN], y[NN], C, N;
 bool v[NN];
-
+void fastint( register int *n ){
+	register char c;
+	*n = 0;
+	while(!isdigit((c = IN)));
+	ungetc(c, stdin);
+	while(c = IN){
+		switch( c ){
+			case ' ': return;
+			case '\n': return;
+			default: (*n) *= 10; (*n) += ( c - '0' ); 
+		}
+	}
+}
 inline int sqr(int x){ return (x*x); }
 inline int d2(int a, int b){ return sqr(x[b]-x[a])+sqr(y[b]-y[a]);}
 void reverse(int k, int cap);
@@ -16,7 +30,7 @@ int main(void){
 		memset(s, 0, N<<2);
 		memset(v, 0, N);
 		FOR(i, N) {
-			scanf("%d %d %d",&x[i],&y[i],&c[i]);
+			fastint(&x[i]); fastint(&y[i]); fastint(&c[i]);
 			int min = 1<<25;
 			FOR(j, i){
 				int d = d2(i,j);
