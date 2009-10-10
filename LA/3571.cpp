@@ -1,27 +1,27 @@
 #include <cstdio>
-#include <cstring>
 
-int gcd(int a, int b) { 
-	if(a % b == 0) return b;
-	return gcd(b, a % b);
-} 
-
-int tot[1001];
+int t[1001];
 int main(void){
-	memset(tot, 0, sizeof(tot));
-	for(int i = 1; i < 1001; ++i)
-		for(int j = i+1; j < 1001; ++j)
-			if(gcd(i,j) == 1) tot[j]++;
-	for(int i = 2; i < 1001; ++i)
-		tot[i] += tot[i-1];
+	for(int i = 1; i < 1001; ++i) t[i] = 1;
+	for(int i = 2; i < 1001; ++i){
+		if(t[i] == 1){
+			int k, x = i - 1;
+			for(int j = i; j < 1001; j+=i){
+				t[j] *= x;
+				k = j / i;
+				while(!(k % i)) t[j] *= i, k /= i;
+			}
+		}
+		t[i] += t[i-1];
+	}
 	int T, N;
 	scanf("%d",&T);
 	for(int cnum = 0; cnum < T; ){
 		scanf("%d",&N);
-		int s = tot[N];
-		printf("%d %d %d\n",++cnum,N,2*s + 3);
+		printf("%d %d %d\n",++cnum,N,(t[N] << 1) + 1);
 	}
-
 	return 0;
 }
+
+	
 
