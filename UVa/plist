@@ -122,6 +122,7 @@
 621 - Secret Research
 623 - 500!
 640 - Self Numbers
+644 - Immediate Decodability
 663 - Sorting Slides
 673 - Parentheses Balance
 674 - Coin Change
@@ -213,6 +214,7 @@
 10340 - All in All
 10346 - Peter's Smoke
 10361 - Automatic Poetry
+10369 - Arctic Network
 10370 - Above Average
 10405 - Longest Common Subsequence
 10408 - Farey sequences
@@ -223,6 +225,7 @@
 10450 - World Cup Noise
 10469 - To Carry or not to Carry
 10473 - Simple Base Conversion
+10474 - Where is the Marble?
 10499 - The Land of Justice
 10509 - R U Kidding Mr. Feynman!
 10515 - Powers Et Al.
@@ -241,7 +244,9 @@
 10714 - Ants
 10783 - Odd Sum
 10789 - Prime Frequency
+10803 - Thunder Mountain
 10812 - Beat the Spread!
+10815 - Andy's First Dictionary
 10852 - Less Prime
 10878 - Decode the tape
 10921 - Find the Telephone
