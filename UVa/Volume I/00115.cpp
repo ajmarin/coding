@@ -70,7 +70,7 @@ int main(void){
 				else {
 					int j = ABS(upa - upb), k = MIN(upa, upb) - 1;
 					if(!k && upa == upb) puts("sibling");
-					else if(j) printf("%d cousin removed %d\n",k,ABS(upa - upb));
+					else if(j) printf("%d cousin removed %d\n",k,j);
 					else printf("%d cousin\n",k);
 				}
 			}
