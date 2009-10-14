@@ -1,55 +1,32 @@
 #include <cstdio>
 #include <cstring>
-#include <vector>
 #include <cctype>
 
-using namespace std;
-
 #define IN getc( stdin ) 
-struct edge {
-	int d, v;
-	edge(int _d, int _v):d(_d),v(_v){}
-};
-vector < edge > adj[500050];
-int deg[500050], q[500050], nv[500050];
-void fastint( register int *n ){
-	register char c, p;
-	bool neg = 0;
-	*n = 0;
-	c = getc( stdin );
-	while(!isdigit(c)) p = c, c = IN;
-	do {
-		(*n) *= 10; (*n) += ( c - '0' );
-		c = IN;
-	} while(isdigit(c));
-	if(p == '-') (*n) *= -1;
-}
+#define NN 500050
+
+int d[NN], nv[NN], p[NN], q[NN], v[NN];
 int main(void){
-	int h, maxval, p, t, x, N;
+	int h, maxval, t, N;
+	for(int i = 0; i < NN; ++i) d[i] = nv[i] = 0;
 	while(scanf("%d\n",&N) && N){
-		for(int i = 0; i < N; ++i){
-			adj[i].clear();
-			deg[i] = 0;
-			nv[i] = 0;
-		}
+		p[0] = -1; nv[0] = 0;
+		int *pp = p+1, *vv = v+1;
 		for(int i = 1; i < N; ++i){
-			fastint(&x), fastint(&p);
-			deg[x]++;
-			adj[i].push_back(edge(x,p));
+			scanf("%d %d",pp,vv);
+			nv[i] = 0; d[*pp]++;
+			pp++; vv++;
 		}
 		h = maxval = t = 0;
-		for(int i = 0; i < N; ++i) q[t] = i, t += (!deg[i]);
+		for(int i = 0; i < N; ++i) q[t] = i, t += (!d[i]);
 		while(h != t){
 			int x = q[h++];
-			vector < edge > :: iterator it;
-			for(it = adj[x].begin(); it != adj[x].end(); it++){
-				int w = (*it).d;
-				int val = nv[x] + (*it).v, mm = val + nv[w];
-				if(mm > maxval) maxval = mm;
-				if(val > nv[w]) nv[w] = val;
-				q[t] = w;
-				t += !--deg[w];
-			}
+			if(p[x] == -1) continue;
+			int val = nv[x] + v[x], mm = val + nv[p[x]];
+			if(mm > maxval) maxval = mm;
+			if(val > nv[p[x]]) nv[p[x]] = val;
+			q[t] = p[x];
+			t += !--d[p[x]];
 		}
 		printf("%d\n",maxval);
 
