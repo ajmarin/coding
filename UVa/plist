@@ -46,6 +46,7 @@
 186 - Trip Routing
 187 - Transaction Processing
 190 - Circle Through Three Points
+191 - Intersection
 195 - Anagram
 200 - Rare Order
 231 - Testing the CATCHER
@@ -74,6 +75,7 @@
 382 - Perfection
 383 - Shipping Routes
 386 - Perfect Cubes
+389 - Basically Speaking
 392 - Polynomial Showdown
 400 - Unix ls
 401 - Palindromes
@@ -128,6 +130,7 @@
 583 - Prime Factor
 591 - Box of Bricks
 594 - One Little, Two Little, Three Little Endians
+612 - DNA Sorting
 621 - Secret Research
 623 - 500!
 640 - Self Numbers
