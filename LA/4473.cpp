@@ -22,7 +22,7 @@ int main(void){
 	FOR(i, 128) FOR(j, 128) m[i][j][1] = -1;
 	while(scanf("%d %d %d %d",&N,&R,&C,&K)){
 		if(!(N || R || C || K)) break;
-		FOR(i,R) FOR(j,C) fastint("%d",&m[i][j][0]);
+		FOR(i,R) FOR(j,C) scanf("%d",&m[i][j][0]);
 		FOR(k,K) {
 			FOR(i,R) FOR(j,C) attack(i,j);
 			FOR(i,R) FOR(j,C) {
