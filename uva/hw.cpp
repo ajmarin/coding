@@ -11,7 +11,7 @@ const char *roman[] = {"","I","II","III","IV","V","VI","VII","VIII","IX",
 
 string vol; 
 const char *site = "http://mrnvhs.webs.com/codes/Volume";
-const char *begin = "/home/mrn/coding/UVa/Volume ", *dotcpp = ".cpp";
+const char *begin = "/home/mrn/coding/uva/Volume ", *dotcpp = ".cpp";
 FILE *plist, *html;
 void show(int pnum, int vol){
 	char dir[200], line[512], s[6], *ptr;
