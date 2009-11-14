@@ -1,15 +1,12 @@
 #include <cctype>
 #include <cstdio>
 
-#define FF 20
 #define FORI(a, b, c) for(int a = b; a < c; ++a)
 #define FOR(a, b) FORI(a, 0, b)
 #define IN getc( stdin )
 #define MIN(a,b) ((a)<(b)?(a):(b))
-#define PP 5000
 
-int c[PP][FF];
-int dp[PP + 5][FF];
+int dp[5001][20];
 void fastint( register int *n ){
 	register char c = 0;
 	*n = 0;
@@ -18,21 +15,18 @@ void fastint( register int *n ){
 }
 int main(void){
 	int F, P, E, A;
-	int a, b, min;
+	register int a, b, min;
 	while(scanf("%d %d %d %d", &F, &P, &E, &A) && F){
-		E *= A;
-		FOR(i, P) FOR(j, F){
-			fastint(&a), fastint(&b);
-			c[i][j] = a * b;
-		}
+		E *= A; ++P;
 		dp[0][0] = 0;
 		FORI(i, 1, F) dp[0][i] = E;
-		FORI(i, 1, P + 1){
+		FORI(i, 1, P){
 			int p = i - 1;
-			int *pc = c[p], *pdp = dp[p], *pdpi = dp[i];
+			int *pdp = dp[p], *pdpi = dp[i];
 			min = 0x7fffffff;
 			FOR(j, F) {
-				*pdpi = *pdp++ + *pc++;
+				fastint(&a), fastint(&b);
+				*pdpi = *pdp++ + (a * b);
 				min = MIN(*pdpi, min);
 				++pdpi;
 			}
