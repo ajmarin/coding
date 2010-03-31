@@ -143,8 +143,10 @@
 673 - Parentheses Balance
 674 - Coin Change
 675 - Convex Hull of the Polygon
+681 - Convex Hull Finding
 686 - Goldbach's Conjecture (II)
 694 - The Collatz Sequence
+696 - How Many Knights
 706 - LCD Display
 713 - Adding Reversed Numbers
 756 - Biorhythms
@@ -372,3 +374,4 @@
 11701 - Cantor
 11702 - Meltdown
 11703 - sqrt log sin
+11705 - Grasshopper

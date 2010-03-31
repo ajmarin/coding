@@ -1,0 +1,377 @@
+<div> 100 - The 3n + 1 problem </div>
+<div> 101 - The Blocks Problem </div>
+<div> 102 - Ecological Bin Packing </div>
+<div> 103 - Stacking Boxes </div>
+<div> 104 - Arbitrage </div>
+<div> 105 - The Skyline Problem </div>
+<div> 106 - Fermat vs. Pythagoras </div>
+<div> 107 - The Cat in the Hat </div>
+<div> 108 - Maximum Sum </div>
+<div> 109 - SCUD Busters </div>
+<div> 110 - Meta-Loopless Sorts </div>
+<div> 111 - History Grading </div>
+<div> 112 - Tree Summing </div>
+<div> 113 - Power of Cryptography </div>
+<div> 114 - Simulation Wizardry </div>
+<div> 115 - Climbing Trees </div>
+<div> 116 - Unidirectional TSP </div>
+<div> 117 - The Postal Worker Rings Once </div>
+<div> 118 - Mutant Flatworld Explorers </div>
+<div> 119 - Greedy Gift Givers </div>
+<div> 120 - Stacks of Flapjacks </div>
+<div> 121 - Pipe Fitters </div>
+<div> 122 - Trees on the level </div>
+<div> 123 - Searching Quickly </div>
+<div> 124 - Following Orders </div>
+<div> 125 - Numbering Paths </div>
+<div> 126 - The Errant Physicist </div>
+<div> 127 - "Accordian" Patience </div>
+<div> 128 - Software CRC </div>
+<div> 129 - Krypton Factor </div>
+<div> 130 - Roman Roulette </div>
+<div> 133 - The Dole Queue </div>
+<div> 136 - Ugly Numbers </div>
+<div> 138 - Street Numbers </div>
+<div> 140 - Bandwidth </div>
+<div> 146 - ID Codes </div>
+<div> 147 - Dollars </div>
+<div> 151 - Power Crisis </div>
+<div> 154 - Recycling </div>
+<div> 155 - All Squares </div>
+<div> 156 - Ananagrams </div>
+<div> 160 - Factors and Factorials </div>
+<div> 167 - The Sultan's Successors </div>
+<div> 168 - Theseus and the Minotaur </div>
+<div> 170 - Clock Patience </div>
+<div> 181 - Hearts </div>
+<div> 186 - Trip Routing </div>
+<div> 187 - Transaction Processing </div>
+<div> 190 - Circle Through Three Points </div>
+<div> 191 - Intersection </div>
+<div> 195 - Anagram </div>
+<div> 200 - Rare Order </div>
+<div> 231 - Testing the CATCHER </div>
+<div> 253 - Cube painting </div>
+<div> 256 - Quirksome Squares </div>
+<div> 264 - Count on Cantor </div>
+<div> 272 - TEX Quotes </div>
+<div> 278 - Chess </div>
+<div> 291 - The House Of Santa Claus </div>
+<div> 294 - Divisors </div>
+<div> 297 - Quadtrees </div>
+<div> 299 - Train Swapping </div>
+<div> 305 - Joseph </div>
+<div> 315 - Network </div>
+<div> 324 - Factorial Frequencies </div>
+<div> 336 - A Node Too Far </div>
+<div> 340 - Master-Mind Hints </div>
+<div> 343 - What Base Is This? </div>
+<div> 344 - Roman Digititis </div>
+<div> 350 - Pseudo-Random Numbers </div>
+<div> 352 - The Seasonal War </div>
+<div> 357 - Let Me Count The Ways </div>
+<div> 369 - Combinations </div>
+<div> 371 - Ackermann Functions </div>
+<div> 374 - Big Mod </div>
+<div> 380 - Call Forwarding </div>
+<div> 382 - Perfection </div>
+<div> 383 - Shipping Routes </div>
+<div> 386 - Perfect Cubes </div>
+<div> 389 - Basically Speaking </div>
+<div> 392 - Polynomial Showdown </div>
+<div> 400 - Unix ls </div>
+<div> 401 - Palindromes </div>
+<div> 406 - Prime Cuts </div>
+<div> 408 - Uniform Generator </div>
+<div> 409 - Excuses, Excuses! </div>
+<div> 412 - Pi </div>
+<div> 414 - Machined Surfaces </div>
+<div> 417 - Word Index </div>
+<div> 424 - Integer Inquiry </div>
+<div> 437 - The Tower of Babylon </div>
+<div> 438 - The Circumference of the Circle </div>
+<div> 439 - Knight Moves </div>
+<div> 440 - Eeny Meeny Moo </div>
+<div> 441 - Lotto </div>
+<div> 443 - Humble Numbers </div>
+<div> 444 - Encoder and Decoder </div>
+<div> 445 - Marvelous Mazes </div>
+<div> 446 - Kibbles "n" Bits "n" Bits "n" Bits </div>
+<div> 458 - The Decoder </div>
+<div> 459 - Graph Connectivity </div>
+<div> 476 - Points in Figures: Rectangle </div>
+<div> 477 - Points in Figures: Rectangles and Circles </div>
+<div> 478 - Points in Figures: Rectangles, Circles, Triangles </div>
+<div> 481 - What Goes Up </div>
+<div> 483 - Word Scramble </div>
+<div> 484 - The Department of Redundancy Department </div>
+<div> 485 - Pascal's Triangle of Death </div>
+<div> 488 - Triangle Wave </div>
+<div> 489 - Hangman Judge </div>
+<div> 490 - Rotating Sentences </div>
+<div> 492 - Pig-Latin </div>
+<div> 494 - Kindergarten Counting Game </div>
+<div> 495 - Fibonacci Freeze </div>
+<div> 496 - Simply Subsets </div>
+<div> 497 - Strategic Defense Initiative </div>
+<div> 499 - What's The Frequency, Kenneth? </div>
+<div> 514 - Rails </div>
+<div> 530 - Binomial Showdown </div>
+<div> 531 - Compromise </div>
+<div> 534 - Frogger </div>
+<div> 537 - Artificial Intelligence? </div>
+<div> 536 - Tree Recovery </div>
+<div> 541 - Error Correction </div>
+<div> 543 - Goldbach's Conjecture </div>
+<div> 562 - Dividing Coins </div>
+<div> 568 - Just the Facts </div>
+<div> 572 - Oil Deposits </div>
+<div> 573 - The Snail </div>
+<div> 575 - Skew Binary </div>
+<div> 576 - Haiku Review </div>
+<div> 579 - ClockHands </div>
+<div> 583 - Prime Factor </div>
+<div> 591 - Box of Bricks </div>
+<div> 594 - One Little, Two Little, Three Little Endians </div>
+<div> 612 - DNA Sorting </div>
+<div> 621 - Secret Research </div>
+<div> 623 - 500! </div>
+<div> 624 - CD </div>
+<div> 640 - Self Numbers </div>
+<div> 644 - Immediate Decodability </div>
+<div> 663 - Sorting Slides </div>
+<div> 673 - Parentheses Balance </div>
+<div> 674 - Coin Change </div>
+<div> 675 - Convex Hull of the Polygon </div>
+<div> 681 - Convex Hull Finding </div>
+<div> 686 - Goldbach's Conjecture (II) </div>
+<div> 694 - The Collatz Sequence </div>
+<div> 696 - How Many Knights </div>
+<div> 706 - LCD Display </div>
+<div> 713 - Adding Reversed Numbers </div>
+<div> 756 - Biorhythms </div>
+<div> 820 - Internet Bandwidth </div>
+<div> 821 - Page Hopping </div>
+<div> 834 - Continued Fractions </div>
+<div> 846 - Steps </div>
+<div> 847 - A Multiplication Game </div>
+<div> 895 - Word Problem </div>
+<div> 900 - Brick Wall Patterns </div>
+<div> 913 - Joana and the Odd Numbers </div>
+<div> 948 - Fibonaccimal Base </div>
+<div> 993 - Product of digits </div>
+<div> 10000 - Longest Paths </div>
+<div> 10003 - Cutting Sticks </div>
+<div> 10004 - Bicoloring </div>
+<div> 10006 - Carmichael Numbers </div>
+<div> 10008 - What's Cryptanalysis? </div>
+<div> 10009 - All Roads Lead Where? </div>
+<div> 10010 - Where's Waldorf? </div>
+<div> 10013 - Super long sums </div>
+<div> 10015 - Joseph's Cousin </div>
+<div> 10018 - Reverse and Add </div>
+<div> 10019 - Funny Encryption Method </div>
+<div> 10026 - Shoemaker's Problem </div>
+<div> 10032 - Tug Of War </div>
+<div> 10033 - Interpreter </div>
+<div> 10034 - Freckles </div>
+<div> 10035 - Primary Arithmetic </div>
+<div> 10038 - Jolly Jumpers </div>
+<div> 10041 - Vito's Family </div>
+<div> 10042 - Smith Numbers </div>
+<div> 10044 - Erdos Numbers </div>
+<div> 10050 - Hartals </div>
+<div> 10055 - Hashmat the Brave Warrior </div>
+<div> 10062 - Tell me the frequencies! </div>
+<div> 10066 - The Twin Towers </div>
+<div> 10067 - Playing With Wheels </div>
+<div> 10070 - Leap Year or Not Leap Year and ... </div>
+<div> 10071 - Back to High School Physics </div>
+<div> 10077 - The Stern-Brocot Number System </div>
+<div> 10079 - Pizza Cutting </div>
+<div> 10080 - Gopher II </div>
+<div> 10082 - WERTYU </div>
+<div> 10098 - Generating Fast </div>
+<div> 10099 - The Tourist Guide </div>
+<div> 10104 - Euclid Problem </div>
+<div> 10105 - Polynomial Coefficients </div>
+<div> 10106 - Product </div>
+<div> 10107 - What is the Median? </div>
+<div> 10110 - Light, more light </div>
+<div> 10127 - Ones </div>
+<div> 10131 - Is Bigger Smarter? </div>
+<div> 10137 - The Trip </div>
+<div> 10142 - Australian Voting </div>
+<div> 10161 - Ant on a Chessboard </div>
+<div> 10183 - How Many Fibs? </div>
+<div> 10189 - Minesweeper </div>
+<div> 10191 - Longest Nap </div>
+<div> 10192 - Vacation </div>
+<div> 10193 - All You Need Is Love </div>
+<div> 10195 - The Knights Of The Round Table </div>
+<div> 10196 - Check The Check </div>
+<div> 10201 - Adventures in Moving - Part IV </div>
+<div> 10205 - Stack 'em Up </div>
+<div> 10209 - Is This Integration ? </div>
+<div> 10220 - I Love Big Numbers ! </div>
+<div> 10222 - Decode the Mad man </div>
+<div> 10223 - How many nodes ? </div>
+<div> 10235 - Simply Emirp </div>
+<div> 10245 - The Closest Pair Problem </div>
+<div> 10252 - Common Permutation </div>
+<div> 10260 - Soundex </div>
+<div> 10267 - Graphical Editor </div>
+<div> 10276 - Hanoi Tower Troubles Again! </div>
+<div> 10282 - Babelfish </div>
+<div> 10285 - Longest Run on a Snowboard </div>
+<div> 10286 - Trouble with a Pentagon </div>
+<div> 10290 - {Sum+=i++} to Reach N </div>
+<div> 10295 - Hay Points </div>
+<div> 10300 - Ecological Premium </div>
+<div> 10301 - Rings and Glue </div>
+<div> 10302 - Summation of Polynomials </div>
+<div> 10305 - Ordering Tasks </div>
+<div> 10310 - Dog and Gopher </div>
+<div> 10315 - Poker Hands </div>
+<div> 10323 - Factorial! You Must be Kidding!!! </div>
+<div> 10324 - Zeros and Ones </div>
+<div> 10327 - Flip Sort </div>
+<div> 10330 - Power Transmission </div>
+<div> 10334 - Ray Through Glasses </div>
+<div> 10336 - Rank the Languages </div>
+<div> 10338 - Mischievous Children </div>
+<div> 10340 - All in All </div>
+<div> 10346 - Peter's Smoke </div>
+<div> 10361 - Automatic Poetry </div>
+<div> 10369 - Arctic Network </div>
+<div> 10370 - Above Average </div>
+<div> 10394 - Twin Primes </div>
+<div> 10405 - Longest Common Subsequence </div>
+<div> 10408 - Farey sequences </div>
+<div> 10409 - Die Game </div>
+<div> 10420 - List of Conquests </div>
+<div> 10424 - Love Calculator </div>
+<div> 10432 - Polygon Inside A Circle </div>
+<div> 10450 - World Cup Noise </div>
+<div> 10469 - To Carry or not to Carry </div>
+<div> 10473 - Simple Base Conversion </div>
+<div> 10474 - Where is the Marble? </div>
+<div> 10499 - The Land of Justice </div>
+<div> 10509 - R U Kidding Mr. Feynman! </div>
+<div> 10515 - Powers Et Al. </div>
+<div> 10530 - Guessing Game </div>
+<div> 10533 - Digit Primes </div>
+<div> 10534 - Wavio Sequence </div>
+<div> 10550 - Combination Lock </div>
+<div> 10579 - Fibonacci Numbers </div>
+<div> 10583 - Ubiquitous Religions </div>
+<div> 10591 - Happy Number </div>
+<div> 10608 - Friends </div>
+<div> 10642 - Can You Solve It? </div>
+<div> 10664 - Luggage </div>
+<div> 10684 - The jackpot </div>
+<div> 10696 - f91 </div>
+<div> 10699 - Count the factors </div>
+<div> 10701 - Pre, in and post </div>
+<div> 10703 - Free spots </div>
+<div> 10714 - Ants </div>
+<div> 10783 - Odd Sum </div>
+<div> 10789 - Prime Frequency </div>
+<div> 10803 - Thunder Mountain </div>
+<div> 10812 - Beat the Spread! </div>
+<div> 10815 - Andy's First Dictionary </div>
+<div> 10852 - Less Prime </div>
+<div> 10878 - Decode the tape </div>
+<div> 10921 - Find the Telephone </div>
+<div> 10922 - 2 the 9s </div>
+<div> 10924 - Prime Words </div>
+<div> 10929 - You can say 11 </div>
+<div> 10931 - Parity </div>
+<div> 10945 - Mother bear </div>
+<div> 10970 - Big Chocolate </div>
+<div> 11000 - Bee </div>
+<div> 11044 - Searching for Nessy </div>
+<div> 11045 - My T-shirt suits me </div>
+<div> 11067 - Little Red Riding Hood </div>
+<div> 11069 - A Graph Problem </div>
+<div> 11082 - Matrix Decompressing </div>
+<div> 11121 - Base -2 </div>
+<div> 11137 - Ingenuous Cubrency </div>
+<div> 11172 - Relational Operator </div>
+<div> 11185 - Ternary </div>
+<div> 11192 - Group Reverse </div>
+<div> 11207 - The easiest way </div>
+<div> 11219 - How old are you? </div>
+<div> 11220 - Decoding the message. </div>
+<div> 11222 - Only I did it! </div>
+<div> 11233 - Deli Deli </div>
+<div> 11244 - Counting Stars </div>
+<div> 11309 - Counting Chaos </div>
+<div> 11310 - Delivery Debacle </div>
+<div> 11321 - Sort! Sort!! and Sort!!!  </div>
+<div> 11332 - Summing Digits </div>
+<div> 11364 - Parking </div>
+<div> 11369 - Shopaholic </div>
+<div> 11371 - Number Theory for Newbies </div>
+<div> 11387 - The 3-Regular Graph </div>
+<div> 11388 - GCD LCM </div>
+<div> 11401 - Triangle Counting </div>
+<div> 11408 - Count DePrimes </div>
+<div> 11417 - GCD </div>
+<div> 11428 - Cubes </div>
+<div> 11437 - Triangle Fun </div>
+<div> 11452 - Dancing the Cheeky-Cheeky </div>
+<div> 11455 - Behold my quadrangle </div>
+<div> 11461 - Square Numbers </div>
+<div> 11462 - Age Sort </div>
+<div> 11470 - Square Sums </div>
+<div> 11479 - Is this the easiest problem? </div>
+<div> 11480 - Jimmy's Balls </div>
+<div> 11481 - Arrange the Numbers </div>
+<div> 11483 - Code Creator </div>
+<div> 11489 - Integer Game </div>
+<div> 11491 - Erasing and Winning </div>
+<div> 11492 - Babel </div>
+<div> 11493 - The Club Ballroom </div>
+<div> 11494 - Queen </div>
+<div> 11495 - Bubbles and Buckets </div>
+<div> 11496 - Musical Loop </div>
+<div> 11498 - Division of Nlogonia </div>
+<div> 11500 - Vampires </div>
+<div> 11505 - Logo </div>
+<div> 11507 - Bender B. Rodríguez Problem </div>
+<div> 11508 - Life on Mars? </div>
+<div> 11519 - Logo 2 </div>
+<div> 11530 - SMS Typing </div>
+<div> 11541 - Decoding </div>
+<div> 11547 - Automatic Answer </div>
+<div> 11554 - Hapless Hedonism </div>
+<div> 11556 - Best Compression Ever </div>
+<div> 11565 - Simple Equations </div>
+<div> 11567 - Moliu Number Generator </div>
+<div> 11610 - Reverse Prime </div>
+<div> 11650 - Mirror Clock </div>
+<div> 11658 - Best Coalitions </div>
+<div> 11666 - Logarithms </div>
+<div> 11660 - Look-and-Say sequences </div>
+<div> 11661 - Burger Time? </div>
+<div> 11677 - Alarm Clock </div>
+<div> 11678 - Cards' Exchange </div>
+<div> 11679 - Sub-prime </div>
+<div> 11680 - Dragster </div>
+<div> 11683 - Laser Sculpture </div>
+<div> 11685 - Moveable Maze </div>
+<div> 11686 - Pick up sticks </div>
+<div> 11687 - Digits </div>
+<div> 11688 - Rotate to root </div>
+<div> 11689 - Soda Surpler </div>
+<div> 11690 - Money Matters </div>
+<div> 11691 - Allergy Test </div>
+<div> 11692 - Rain Fall </div>
+<div> 11693 - Speedy Escape </div>
+<div> 11697 - Playfair Cipher </div>
+<div> 11699 - Rooks </div>
+<div> 11701 - Cantor </div>
+<div> 11702 - Meltdown </div>
+<div> 11703 - sqrt log sin </div>
+<div> 11705 - Grasshopper </div>
