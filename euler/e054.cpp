@@ -36,7 +36,7 @@ int three_of_a_kind(int p){
 }
 int straight(int p){
 	FOR(i, 4) if(h[p].c[i] + 1 != h[p].c[i+1]) return 0;
-	if(h[p].c[4] == 14 && h[p].c[0] == 2) return 4014;
+	if(h[p].c[4] == 14 && h[p].c[0] == 2) return 4005;
 	if(h[p].c[4] == h[p].c[3] + 1) return 4000 + h[p].c[4];
 	return 0;
 }
@@ -97,3 +97,4 @@ int main(void){
 	printf("Answer: %d\n", ans);
 	return 0;
 }
+
