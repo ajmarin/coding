@@ -7,7 +7,7 @@ int showed = 0;
 char pname[200];
 const char *roman[] = {"","I","II","III","IV","V","VI","VII","VIII","IX",
 "C","CI","CII","CIII","CIV","CV","CVI","CVII","CVIII","CIX","CX","CXI",
-"CXII","CXIII","CXIV","CXV","CXVI","CXVII"};
+"CXII","CXIII","CXIV","CXV","CXVI","CXVII", "CXVIII"};
 
 string vol; 
 const char *site = "http://mrnvhs.webs.com/codes/Volume";
@@ -45,7 +45,7 @@ void doVol(int k){
 }
 int main(void){
 	plist = freopen("plist","r",stdin); 
-	for(int c, i = 1; i < 28; i++){
+	for(int c, i = 1; i < 29; i++){
 		int pnum;
 		doVol(i);
 		html = fopen(vol.c_str(),"w");
