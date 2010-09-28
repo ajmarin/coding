@@ -1,4 +1,5 @@
 #include <algorithm> 
+#include <cstdio>
 #include <cmath>
 using namespace std;
 /* Point 2d {{{ */
@@ -72,3 +73,32 @@ struct c2d {
 	};
 };
 /* }}} */
+p2d p[128];
+int x[128], y[128];
+int sqr(int x){ return (x * x); }
+int main(void){
+	double r, maxd;
+	for(int n, maxd2; scanf("%d", &n) && n; ){
+		maxd2 = 0;
+		for(int i = 0; i < n; ++i){
+			scanf("%d %d", &x[i], &y[i]);
+			p[i] = p2d(x[i], y[i]);
+		}
+		scanf("%lf", &r);
+		maxd = sqrt(maxd2);
+		bool ok = 0;
+		for(int i = 0; !ok && i < n; ++i){
+			for(int j = 0; !ok && j < n; ++j){
+				if(i == j) continue;
+				c2d circle = c2d(p[i], p[j], r);
+				ok = 1;
+				for(int k = 0; ok && k < n; ++k)
+					ok &= circle.center.dist(p[k]) <= r;
+			}
+		}
+		if(ok) puts("The polygon can be packed in the circle.");
+		else puts("There is no way of packing that polygon.");
+	}
+	return 0;
+}
+
