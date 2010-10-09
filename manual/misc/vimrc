@@ -1,6 +1,0 @@
-set nocp bs=2 ts=4 sw=4 noet ru ai si cin hls is ic scs sc nu
-syn on
-set ww=<,>,b,s,[,]
-set mouse=a bg=dark
-hi Normal guibg=black guifg=white
-set fen fdm=marker
