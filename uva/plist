@@ -49,6 +49,7 @@
 187 - Transaction Processing
 190 - Circle Through Three Points
 191 - Intersection
+193 - Graph Coloring
 195 - Anagram
 200 - Rare Order
 231 - Testing the CATCHER
@@ -145,6 +146,7 @@
 621 - Secret Research
 623 - 500!
 624 - CD
+628 - Passwords
 639 - Don't Get Rooked
 640 - Self Numbers
 644 - Immediate Decodability
@@ -159,6 +161,7 @@
 706 - LCD Display
 713 - Adding Reversed Numbers
 725 - Division
+750 - 8 Queens Chess Problem
 756 - Biorhythms
 820 - Internet Bandwidth
 821 - Page Hopping
