@@ -54,6 +54,8 @@
 193 - Graph Coloring
 195 - Anagram
 200 - Rare Order
+202 - Repeating Decimals
+216 - Getting in Line
 231 - Testing the CATCHER
 253 - Cube painting
 256 - Quirksome Squares
@@ -518,4 +520,4 @@
 11876 - N + NOD (N)
 11877 - The Coco-Cola Store
 11878 - Homework Checker
-11879 - multiple of 17
+11879 - Multiple of 17
