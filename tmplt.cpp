@@ -1,31 +1,32 @@
-#include <cstdio>
 #include <algorithm>
-#include <vector>
-#include <queue>
-#include <cctype>
-#include <cstring>
-#include <string>
-#include <cstdlib>
 #include <cmath>
-
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <map>
+#include <queue>
+#include <set>
+#include <string>
+#include <vector>
 using namespace std;
 
-#define ABS(a)		((a)< 0?-(a):(a))
-#define ALL(x)		(x.begin(), x.end())
-#define ALLI(x,n)	(x, x+n)
-#define FORI(a,b,c)	for(int a = b; a < c; ++a)
-#define FOR(a,b)	FORI(a,0,b)
-#define GETI(a)		scanf("%d",&a)
-#define GETS(a)		scanf("%s",a)
-#define GETL(a) 	fgets(a, sizeof(a), stdin)
-#define IN 			getc( stdin )
-#define MAX(a,b)	((a)>(b)?(a):(b))
-#define MIN(a,b) 	((a)<(b)?(a):(b))
+#define FOR(i,n)	for(int i = 0; i < n; ++i)
+#define FORI(i,s,n)	for(int i = s; i < n; ++i)
+#define FORD(i, n)	for(int i = n; i > -1; --i)
+#define IN(x)		(x = getc(stdin))
+#define MAX(a,b)	((a) > (b) ? (a) : (b))
+#define MIN(a,b)	((a) < (b) ? (a) : (b))
 #define OUT(x)		putc(x, stdout)
-#define TR(x) 		for(typeof(x.begin())it=x.begin();it!=x.end();++it)
 
 int main(void){
-
+/*
+#ifdef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	frepoen("output.txt", "w", stdout);
+#endif
+*/
 	return 0;
 }
 
