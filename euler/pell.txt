@@ -1,0 +1,12 @@
+Pell equations
+
+Pell's equation is any Diophantine equation of the form
+
+x^2 - n y^2 = 1
+
+(x/y) ~ sqrt(n) when x-> inf
+
+After finding the fundamental solution, new solutions can be generated:
+
+x_k = x_1 * x_k-1 + n * y_1 * y_k-1
+y_k = x_1 * y_k-1 + y_1 * x_k-1

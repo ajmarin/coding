@@ -4,12 +4,12 @@ class e093
 	bool[] seen = new bool[360];
 	static void Main()
 	{
-        DateTime st = DateTime.Now;
+		DateTime st = DateTime.Now;
 		new e093().solve();
-        TimeSpan ts = DateTime.Now - st;
-        Console.WriteLine("Elapsed time: {0}ms",
-            ts.Hours * 3600000 + ts.Minutes * 60000 + 
-            ts.Seconds * 1000 + ts.Milliseconds);
+		TimeSpan ts = DateTime.Now - st;
+		Console.WriteLine("Elapsed time: {0}ms",
+			ts.Hours * 3600000 + ts.Minutes * 60000 +
+			ts.Seconds * 1000 + ts.Milliseconds);
 	}
 	bool permutation(char[] x){
 		int k, l; char t;
@@ -76,5 +76,5 @@ class e093
 						}
 					}
 		Console.WriteLine("({0}, #{1})", ans, n);
-	}				
+	}
 }

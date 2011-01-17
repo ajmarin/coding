@@ -47,5 +47,5 @@ class e091
 			}
 		Console.WriteLine(ans);
 		Console.ReadLine();
-	}				
+	}
 }
