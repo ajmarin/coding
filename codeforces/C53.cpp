@@ -46,10 +46,10 @@ int main(void){
 ** We have n-1 '+' and n '_' 
 ** The number of possible increasing sequences of size n is all permutations of
 ** those '+' and '_':
-** F(n) = (2*n + 1)! / ((n - 1)! * n!)
+** F(n) = (2*n - 1)! / ((n - 1)! * n!)
 ** if we want increasing or decreasing sequences - G(n):
 ** G(n) = 2 * F(n) - n
-** G(n) = 2 * (2n + 1)! / (n-1)! / n! = 2 * n * (2n+1)! / (n*(n-1)!) / n! - n
+** G(n) = 2 * (2n-1)! / (n-1)! / n! = 2 * n * (2n-1)! / (n*(n-1)!) / n! - n
 ** G(n) = 2n! / (n!)^2 - n
 ** G(n) = C(2n, n) - n
 ** where C(a, b) = a! / (b! * (a- b)!)
