@@ -38,21 +38,19 @@ int main(void){
 
 /* 
 ** Number of increasing sequences of length n using only numbers 1..n
-** a[i] > a[i - 1] for i > 0
+** a[i] >= a[i - 1] for i = 1..n-1
 ** a[i] >= 1 && a[i] <= n for i = 0..n-1
 ** Representing sequence as a string formed by '_' and '+'
 ** where '_' means show number and '+' means add 1 (we start with 1)
 ** e.g. 1444 = _ + + + _ _ _
 ** We have n-1 '+' and n '_' 
-** The number of possible sequences of size n is to count all permutations:
-** F(n) = (2*n + 1)!
-** with n-1 '+' repeating and n '_' repeating 
-** to remove duplicates:
-** G(n) = (2*n + 1)! / ((n - 1)! * n!)
-** G(n) is the number of increasing sequences
-** if we want increasing or decreasing sequences - H(n):
-** H(n) = 2 * G(n) - n
-** H(n) = 2 * (2n + 1)! / (n-1)! / n! = 2 * n * (2n+1)! / (n*(n-1)!) / n! - n
-** H(n) = 2n! / (n!)^2 - n
-** H(n) = C(2n, n) - n
+** The number of possible increasing sequences of size n is all permutations of
+** those '+' and '_':
+** F(n) = (2*n + 1)! / ((n - 1)! * n!)
+** if we want increasing or decreasing sequences - G(n):
+** G(n) = 2 * F(n) - n
+** G(n) = 2 * (2n + 1)! / (n-1)! / n! = 2 * n * (2n+1)! / (n*(n-1)!) / n! - n
+** G(n) = 2n! / (n!)^2 - n
+** G(n) = C(2n, n) - n
+** where C(a, b) = a! / (b! * (a- b)!)
 */
