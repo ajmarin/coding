@@ -87,6 +87,24 @@ class BigInt {
 	BigInt operator *=(long long a){
 		return *this = *this * BigInt(a);
 	}
+	BigInt sqroot(){
+		string num = n; int l = n.size();
+		reverse(num.begin(), num.end());
+		BigInt r, rem, x(num.substr(0, 2 - (l & 1)));
+		int f = l & 1 ? x.n[0] - '0' : 10 * (x.n[1] - '0') + (x.n[0] - '0');
+		f = (int)sqrt(f);
+		r = BigInt(f);
+		rem = x - f * f;
+		for(int i = 2 - (l & 1), d; i < l; i += 2){
+			BigInt down = r * 20;
+			rem = rem * 100 + num.substr(i, 2);
+			rem.trim();
+			for(d = 1; d < 10 && ((down + d) * d) <= rem; ++d);
+			r.n = (char)(--d + '0') + r.n;
+			rem = rem - (down + d) * d;
+		}
+		return r;
+	}
 	bool operator ==(BigInt b){
 		return mycmp(b) == 0;
 	}
@@ -147,6 +165,10 @@ class BigInt {
 int main(void){
 	assert(BigInt(69) > BigInt(52));
 	assert(BigInt(1) - 1 == 0);
+	assert(BigInt(81).sqroot() == 9);
+	assert(BigInt("4567486383288161726959913764561").sqroot() == 2137167841627831LL);
+	assert(BigInt(15241578750190521LL).sqroot() == 123456789);
+	assert(BigInt(10000).sqroot() == 100);
 	assert(BigInt(873) > BigInt(218));
 	assert(BigInt(159) < BigInt(951));
 	assert(BigInt(873) - BigInt(218) == 655);
