@@ -26,6 +26,11 @@ template <class _T> _T MAX(_T a, _T b){ return a > b ? a : b; }
 template <class _T> _T MIN(_T a, _T b){ return a < b ? a : b; }
 
 int main(void){
-
+	int i, n, sum = 0; scanf("%d", &n); n = abs(n);
+	for(i = 0; ; ++i){
+		sum += i;
+		if(sum >= n && ((sum & 1) == (n & 1))) break;
+	}
+	printf("%d\n", i);
 	return 0;
 }
