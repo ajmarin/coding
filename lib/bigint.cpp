@@ -5,8 +5,8 @@
 #include <string>
 using namespace std;
 class BigInt {
-	string n;
 	public:
+	string n;
 	BigInt(string num = "0"){
 		n = num;
 		reverse(n.begin(), n.end());
@@ -87,6 +87,23 @@ class BigInt {
 	BigInt operator *=(long long a){
 		return *this = *this * BigInt(a);
 	}
+	BigInt operator >>(int x){
+		BigInt r = *this;
+		reverse(r.n.begin(), r.n.end());
+		for(int i = 0; i < x; ++i){
+			string result = "";
+			int d = 0, sz = r.n.size();
+			for(int i = 0; i < sz; ++i){
+				d = d * 10 + r.n[i] - '0';
+				result += (d >> 1) + '0';
+				d &= 1;
+			}
+			r.n = result;
+		}
+		reverse(r.n.begin(), r.n.end());
+		r.trim();
+		return r;
+	}
 	BigInt sqroot(){
 		string num = n; int l = n.size();
 		reverse(num.begin(), num.end());
@@ -164,6 +181,8 @@ class BigInt {
 
 int main(void){
 	assert(BigInt(69) > BigInt(52));
+	assert(BigInt(1048576) >> 20 == 1);
+	assert(BigInt(63) >> 5 == 1);
 	assert(BigInt(1) - 1 == 0);
 	assert(BigInt(81).sqroot() == 9);
 	assert(BigInt("4567486383288161726959913764561").sqroot() == 2137167841627831LL);
