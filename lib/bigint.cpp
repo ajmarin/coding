@@ -4,8 +4,7 @@
 #include <cstdio>
 #include <string>
 using namespace std;
-class BigInt {
-	public:
+struct BigInt {
 	string n;
 	BigInt(string num = "0"){
 		n = num;
