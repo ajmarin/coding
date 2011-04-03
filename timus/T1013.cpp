@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <string>
 using namespace std;
-const int DIGITS = 1024;
+const int DIGITS = 2048;
 struct BigInt {
 	int d[DIGITS], i;
 	BigInt(string s = "0"){
