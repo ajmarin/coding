@@ -30,7 +30,7 @@ int main(void){
 				if(a * v + s[i] < 0) v = min(vmax, - s[i] / a);
 				tt += L[i] / v;
 			}
-			printf("%.10lg\n", tt);
+			printf("%.6lf\n", tt);
 		} else puts("IMPOSSIBLE");
 	}
 	return 0;

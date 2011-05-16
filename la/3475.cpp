@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <algorithm>
-
+#include <cstring>
 const char *noway = "No solution", *z = "0";
 int n[32], pos[32], s[256];
 int main(void){
