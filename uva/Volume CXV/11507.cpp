@@ -1,5 +1,5 @@
 /////////////////////////////////
-// 11507 - Bender B. Rodríguez Problem
+// 11507 - Bender B. Rodriguez Problem
 /////////////////////////////////
 #include<cstdio>
 int moves,i;
