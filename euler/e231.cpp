@@ -6,20 +6,6 @@ bool p[MAX];
 int pl[MAX/10], pc = 1;
 int fs[MAX];
 
-int factorize(int x){
-	int r = 0;
-	while(!(x & 1)) r += 2, x >>= 1;
-	while(!(x % 3)) r += 3, x /= 3;
-	for(int i = 1; ; ++i){
-		int p1 = 6*i-1, p2 = p1+2;
-		if(p1*p1 > x) break;
-		while(!(x % p1)) r += p1, x /= p1;
-		while(!(x % p2)) r += p2, x /= p2;
-	}
-	if(x != 1) r += x;
-	return r;
-}
-
 void go(int v, int idx, int sum){
 	int lim = MAX / v;
 	fs[v] = sum;
