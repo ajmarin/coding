@@ -1,64 +1,68 @@
-/////////////////////////////////
-// 10142 - Australian Voting
-/////////////////////////////////
-#include<cstdio>
-#include<cstring>
-int cases,candidates,ballot[1000][20],votes[21],front[1000], winners,i,nballots=0,max_votes=0,shown=0,min_votes = 0;
-char names[21][85], line[3000],*number;
-bool elim[25], show = 0, show2 = 1;
-void count_winners(){
-	winners = 0;
-	for(i = 1; i <= candidates;i++)
-		if(!elim[i] && votes[i] == max_votes) winners++;
-}
-int findmin(){
-	int min = 10000;
-	for(i = 1; i <= candidates;i++)
-		if(!elim[i] && votes[i] < min) min = votes[i];
-	return min;
-}
-void eliminate(){
-	for(i = 1; i <= candidates; i++)
-			if(votes[i] == min_votes)
-				elim[i] = true;
-}
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+
+//#define DBG
+const int MAXC = 32, MAXV = 1024;
+int opt[MAXV][MAXC], pos[MAXV];
+int votes[MAXC];
+char names[MAXC][128];
+bool invalid[MAXC];
+char line[10048];
 int main(void){
-	scanf("%d",&cases);
-	while(cases){
-		cases--;
-		nballots = max_votes = shown =  min_votes = 0;
-		scanf("%d\n",&candidates);
-		for(i = 1; i <= candidates; gets(names[i]),i++);
-		while(gets(line)){
-			if(line[0] == 0) break;
-			number = strtok(line," ");
-			for(i = 0; i < candidates; i++){
-				sscanf(number,"%d ",&ballot[nballots][i]);				
-				number = strtok(NULL," ");
-			}
-			nballots++;
+	int T; scanf("%d", &T);
+	while(T--){
+		int N; scanf("%d\n", &N);
+		int voters = 0;
+		for(int i = 0; i < N; ++i){
+			fgets(names[i], 128, stdin);
+			for(int j = 0; names[i][j]; ++j)
+				if(names[i][j] == '\n') names[i][j] = 0;
+			votes[i] = 0;
+			invalid[i] = 0;
 		}
-		for(i = 0; i <= candidates; votes[i] = elim[i] = 0,i++);
-		for(i = 0; i < nballots; front[i] = 0,i++);		
-		for(i = 0; i < nballots; i++) max_votes = (++votes[ballot[i][0]] > max_votes? votes[ballot[i][0]]: max_votes);	
-		min_votes = findmin();
-		count_winners();
-		while(max_votes <= nballots/2 && winners*max_votes != nballots){	
-			eliminate();
-			for(i = 0; i < nballots; i++)
-				if(elim[ballot[i][front[i]]]){
-					while(elim[ballot[i][++front[i]]]);
-					max_votes = (++votes[ballot[i][front[i]]] > max_votes? votes[ballot[i][front[i]]]: max_votes);
-				}
-			min_votes = findmin();
-			count_winners();
-		}	
-		for(shown = 0,i = 1; shown != winners; i++)	
-			if(!elim[i] && votes[i] == max_votes){
-				printf("%s\n",names[i]);
-				shown++;
+		int z;
+		for(voters = 0; fgets(line, 10048, stdin) && sscanf(line, "%d", &z) == 1; ++voters){
+			char *num = strtok(line, " \t");
+			pos[voters] = -1;
+			for(int j = 0; j < N; ++j){
+				opt[voters][j] = atoi(num) - 1;
+				num = strtok(NULL, " \t");
 			}
-		if(cases) putchar('\n');
-	}		
+		}
+		int min_votes, max_votes, candidates = N, winner = -1;
+		for(; candidates > 0;){
+			for(int i = 0; i < voters; ++i){
+				if(pos[i] > -1 && !invalid[opt[i][pos[i]]]) continue;
+				pos[i] += pos[i] == -1;
+				while(invalid[opt[i][pos[i]]] && pos[i] < N) ++pos[i];
+				++votes[opt[i][pos[i]]];
+			}
+			/* find min_votes and max_votes */
+			max_votes = 0;
+			min_votes = MAXV;
+			for(int i = 0; i < N; ++i){
+				if(invalid[i]) continue;
+				if(votes[i] < min_votes) min_votes = votes[i];
+				if(votes[i] > max_votes) max_votes = votes[i];
+				if(votes[i] > voters/2){
+					winner = i;
+					break;
+				}
+			}
+			/* eliminate candidates */
+			for(int i = 0; i < N; ++i)
+				if(votes[i] == min_votes){
+					invalid[i] = 1;
+					candidates--;
+				}
+			if(winner != -1) break;
+		}
+		if(winner != -1) puts(names[winner]);
+		else for(int i = 0; i < N; ++i)
+			if(votes[i] == max_votes) puts(names[i]);
+		if(T) puts("");
+	}
 	return 0;
 }
+
