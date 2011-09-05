@@ -16,9 +16,9 @@ struct point {
 	double mod(){ return sqrt(x * x + y * y); }
 	// Clockwise rotation from *this to p in radians [-pi, pi]
 	double ang(point p){ return atan2(this -> cross(p), this -> dot(p)); }
-	bool operator<(point p){ return x < p.x || (x == p.x && y < p.y); }
-	bool operator>(point p){ return x > p.x || (x == p.x && y > p.y); }
-	bool operator==(point p){ return cmp(x, p.x) + cmp(y, p.y) == 0; }
+	bool operator<(point p) const { return x < p.x || (x == p.x && y < p.y); }
+	bool operator>(point p) const { return x > p.x || (x == p.x && y > p.y); }
+	bool operator==(point p) const { return cmp(x, p.x) + cmp(y, p.y) == 0; }
 };
 
 template <typename _T>
