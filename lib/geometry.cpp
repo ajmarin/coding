@@ -16,6 +16,8 @@ struct point {
 	double mod(){ return sqrt(x * x + y * y); }
 	// Clockwise rotation from *this to p in radians [-pi, pi]
 	double ang(point p){ return atan2(this -> cross(p), this -> dot(p)); }
+	double dist(line p){
+	}
 	bool operator<(point p) const { return x < p.x || (x == p.x && y < p.y); }
 	bool operator>(point p) const { return x > p.x || (x == p.x && y > p.y); }
 	bool operator==(point p) const { return cmp(x, p.x) + cmp(y, p.y) == 0; }
@@ -23,7 +25,7 @@ struct point {
 
 template <typename _T>
 struct line {
-	point<_T> p0, v;
+	point<_T> p0, p1, v;
 	bool operator==(line l){ return p0 == l.p0 && v == l.v; }
 };
 
@@ -31,6 +33,16 @@ template <typename _T>
 struct circle {
 
 };
+template <typename _T>
+struct segment {
+	point a, b;
+};
+
+template <typename _T>
+double pointLineDistance(point &p, _T z){
+	if(typeof(z) == typeof(segment)){
+	} else {
+	}
 
 int main(void){
 	// Orthogonal vectors have dot product 0
