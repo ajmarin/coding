@@ -2,7 +2,7 @@
 
 int main(void){
 	for(int n, b, h, w, z; scanf("%d%d%d%d", &n, &b, &h, &w) == 4; ){
-		int ans = 1 << 30;
+		int ans = 500001;
 		for(int i = 0; i < h; ++i){
 			int beds = -1, p;
 			scanf("%d", &p);
@@ -10,9 +10,9 @@ int main(void){
 				scanf("%d", &z);
 				if(z > beds) beds = z;
 			}
-			if(beds >= n && p < ans && p * n <= b) ans = p;
+			if(beds >= n && p < ans) ans = p;
 		}
-		if(ans == (1 << 30)) puts("stay home");
+		if(ans * n > b) puts("stay home");
 		else printf("%d\n", ans * n);
 	}
 	return 0;
