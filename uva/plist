@@ -122,6 +122,7 @@
 446 - Kibbles "n" Bits "n" Bits "n" Bits
 458 - The Decoder
 459 - Graph Connectivity
+462 - Bridge Hand Evaluator
 465 - Overflow
 476 - Points in Figures: Rectangle
 477 - Points in Figures: Rectangles and Circles
@@ -344,6 +345,7 @@
 10591 - Happy Number
 10608 - Friends
 10642 - Can You Solve It?
+10646 - What is the Card?
 10662 - The Wedding
 10663 - Non-Powerful Subsets
 10664 - Luggage
