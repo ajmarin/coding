@@ -110,6 +110,7 @@
 417 - Word Index
 423 - MPI Maelstrom
 424 - Integer Inquiry
+435 - Block Voting
 437 - The Tower of Babylon
 438 - The Circumference of the Circle
 439 - Knight Moves
@@ -313,6 +314,7 @@
 10336 - Rank the Languages
 10338 - Mischievous Children
 10340 - All in All
+10341 - Solve It
 10346 - Peter's Smoke
 10360 - Rat Attack
 10361 - Automatic Poetry
@@ -337,6 +339,7 @@
 10491 - Cows and Cars
 10496 - Collecting Beepers
 10499 - The Land of Justice
+10503 - The dominoes solitaire
 10509 - R U Kidding Mr. Feynman!
 10515 - Powers Et Al.
 10530 - Guessing Game
@@ -350,6 +353,8 @@
 10608 - Friends
 10642 - Can You Solve It?
 10646 - What is the Card?
+10656 - Maximum Sum (II)
+10660 - Citizen attention offices
 10662 - The Wedding
 10663 - Non-Powerful Subsets
 10664 - Luggage
@@ -389,12 +394,14 @@
 11068 - An Easy Task
 11069 - A Graph Problem
 11082 - Matrix Decompressing
+11085 - Back to the 8-Queens
 11121 - Base -2
 11137 - Ingenuous Cubrency
 11172 - Relational Operator
 11185 - Ternary
 11192 - Group Reverse
 11200 - Sapitaur's labyrinth
+11205 - The broken pedometer
 11207 - The easiest way
 11219 - How old are you?
 11220 - Decoding the message.
@@ -451,6 +458,7 @@
 11530 - SMS Typing
 11541 - Decoding
 11547 - Automatic Answer
+11553 - Grid Game
 11554 - Hapless Hedonism
 11556 - Best Compression Ever
 11559 - Event Planning
