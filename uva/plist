@@ -216,6 +216,7 @@
 1016 - Silly Sort
 1056 - Degrees of Separation
 1210 - Sum of Consecutive Prime Numbers
+1213 - Sum of Different Primes
 10000 - Longest Paths
 10003 - Cutting Sticks
 10004 - Bicoloring
@@ -647,6 +648,9 @@
 12247 - Jollo
 12248 - Kids' Wishes
 12250 - Language Detection
+12259 - Fair Division
+12261 - High Score
+12269 - Lawn mower
 12279 - Emoogle Balance
 12289 - One-Two-Three
 12300 - Smallest Regular Polygon
