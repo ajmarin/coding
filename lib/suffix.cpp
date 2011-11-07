@@ -2,7 +2,7 @@
 #include <cstring>
 
 /* {{{ Suffix array */
-#define N 1024
+#define N 104857
 char w[N];
 int H = 0, bucket[N], lcp[N], new_bucket[N], rank[N];
 struct suffix {
@@ -17,21 +17,23 @@ struct suffix {
 	} 
 } pos[N]; 
 bool update_buckets(int L){
-	int i, id;
-	for(i = id = 0; i < L; ++i)
-		new_bucket[pos[i].z] = (id += i && !(pos[i] == pos[i - 1]));
+	int i, j, id;
+	for(i = id = 0; i < L; ){
+		for(j = i; j < L && bucket[pos[j].z] == bucket[pos[i].z]; ++j);
+		if(j != i + 1) sort(pos + i, pos + j);
+		while(i < j) {
+			if(i && !(pos[i] == pos[i - 1])) ++id;
+			new_bucket[pos[i++].z] = id;
+		}
+	}
 	memcpy(bucket, new_bucket, L << 2);
 	return id != L - 1;
 }
 
 void suffix_array(int L){
-	int c = 1;
 	memset(bucket, -1, sizeof bucket);
 	for(int i = H = 0; i < L; ++i) pos[i].z = i;
-	for(H = 0; c; H = (H << 1) | !H){
-		sort(pos, pos + L); 
-		c = update_buckets(L);
-	}
+	for(H = 0; update_buckets(L); H = (H << 1) | !H);
 }
 
 void compute_lcp(int L){
