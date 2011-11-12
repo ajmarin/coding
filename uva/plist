@@ -420,6 +420,7 @@
 10849 - Move the bishop
 10852 - Less Prime
 10872 - Triangles
+10874 - Segments
 10878 - Decode the tape
 10901 - Ferry Loading III
 10903 - Rock-Paper-Scissors Tournament
@@ -711,6 +712,7 @@
 12247 - Jollo
 12248 - Kids' Wishes
 12250 - Language Detection
+12256 - Making Quadrilaterals
 12259 - Fair Division
 12261 - High Score
 12269 - Lawn mower
@@ -724,3 +726,4 @@
 12337 - Bob's Beautiful Balls
 12338 - Anti-Rhyme Pairs
 12342 - Tax Calculator
+12346 - Water Gate Management
