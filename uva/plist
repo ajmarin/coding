@@ -62,6 +62,7 @@
 202 - Repeating Decimals
 213 - Message Decoding
 216 - Getting in Line
+218 - Moth Eradication
 225 - Golygons
 227 - Puzzle
 231 - Testing the CATCHER
@@ -219,8 +220,10 @@
 884 - Factorial Factors
 895 - Word Problem
 900 - Brick Wall Patterns
+902 - Password Search
 913 - Joana and the Odd Numbers
 948 - Fibonaccimal Base
+957 - Popes
 967 - Circular
 990 - Diving for Gold
 991 - Safe Salutations
@@ -421,6 +424,7 @@
 10812 - Beat the Spread!
 10815 - Andy's First Dictionary
 10827 - Maximum sum on a torus
+10830 - A New Function
 10849 - Move the bishop
 10852 - Less Prime
 10872 - Triangles
@@ -733,6 +737,7 @@
 12319 - Edgetown's Traffic Jam
 12321 - Gas Stations
 12324 - Philip J. Fry Problem
+12335 - Lexicographic Order
 12337 - Bob's Beautiful Balls
 12338 - Anti-Rhyme Pairs
 12342 - Tax Calculator
