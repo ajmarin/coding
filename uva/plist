@@ -68,6 +68,7 @@
 231 - Testing the CATCHER
 232 - Crossword Answers
 253 - Cube painting
+255 - Correct Move
 256 - Quirksome Squares
 260 - Il Gioco dell'X
 263 - Number Chains
@@ -167,6 +168,7 @@
 545 - Heads
 543 - Goldbach's Conjecture
 551 - Nesting a Bunch of Brackets
+555 - Bridge Hands
 562 - Dividing Coins
 567 - Risk
 568 - Just the Facts
@@ -331,6 +333,7 @@
 10267 - Graphical Editor
 10276 - Hanoi Tower Troubles Again!
 10282 - Babelfish
+10284 - Chessboard in FEN
 10285 - Longest Run on a Snowboard
 10286 - Trouble with a Pentagon
 10290 - {Sum+=i++} to Reach N
@@ -483,6 +486,7 @@
 11220 - Decoding the message.
 11222 - Only I did it!
 11223 - O: dah dah dah!
+11225 - Tarot scores.
 11227 - The silver bullet.
 11233 - Deli Deli
 11236 - Grocery store
