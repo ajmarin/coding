@@ -135,6 +135,7 @@
 459 - Graph Connectivity
 462 - Bridge Hand Evaluator
 465 - Overflow
+469 - Wetlands of Florida
 474 - Heads / Tails Probability
 476 - Points in Figures: Rectangle
 477 - Points in Figures: Rectangles and Circles
@@ -426,6 +427,7 @@
 10703 - Free spots
 10714 - Ants
 10721 - Bar Codes
+10731 - Test
 10763 - Foreign Exchange
 10783 - Odd Sum
 10784 - Diagonal
@@ -473,6 +475,7 @@
 11085 - Back to the 8-Queens
 11096 - Nails
 11107 - Life Forms
+11110 - Equidivisions
 11121 - Base -2
 11137 - Ingenuous Cubrency
 11138 - Nuts and Bolts
@@ -544,12 +547,14 @@
 11496 - Musical Loop
 11498 - Division of Nlogonia
 11500 - Vampires
+11504 - Dominos
 11505 - Logo
 11507 - Bender B. Rodriguez Problem
 11508 - Life on Mars?
 11512 - GATTACA
 11514 - Batman
 11517 - Exact Change
+11518 - Dominos 2
 11519 - Logo 2
 11520 - Fill the Square
 11525 - Permutation
