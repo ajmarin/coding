@@ -1,3 +1,6 @@
+#include <cstdio>
+#include <map>
+#include <string>
 #include <vector>
 using namespace std;
 
@@ -10,7 +13,7 @@ class Tarjan {
 	vector<edge> g;
 	vector<bool> stacked;
 	int cnt, idx, n, top;
-	
+
 	void strongconnect(int u){
 		int at, v;
 
@@ -35,7 +38,7 @@ class Tarjan {
 			++cnt;
 		}
 	}
-public:
+	public:
 	vector<int> run(int &scc_cnt){
 		for(int i = 0; i < n; ++i) if(index[i] == -1) strongconnect(i); 
 		scc_cnt = cnt;
@@ -53,4 +56,52 @@ public:
 		cnt = idx = top = 0;
 	}
 };
+
+map < string, int > msi;
+char from[32], to[32];
+string names[32];
+int ncnt;
+
+int get_id(string name){
+	map< string, int >::iterator it = msi.find(name);
+	if(it == msi.end()){
+		names[ncnt] = name;
+		return msi[name] = ncnt++;
+	} 
+	return it -> second;
+}
+int main(void){
+	bool firstin = true;
+	for(int dsn(0), n, m; scanf("%d %d", &n, &m) == 2 && n; ){
+		int a, b, cnt = 0, sccs;
+		vector<edge> edges;
+		vector<int> next(n, -1);
+		vector<int> circles;
+		ncnt = 0;
+		if(!firstin) puts("");
+		firstin = false;
+		msi.clear();
+		for(int i = 0; i < m; ++i){
+			scanf("%s %s", from, to);
+			a = get_id(from);
+			b = get_id(to);
+			edges.push_back(edge(next[a], b));
+			next[a] = cnt++;
+		}
+		Tarjan t(n, edges, next);
+		circles = t.run(sccs);
+		printf("Calling circles for data set %d:\n", ++dsn);
+		for(int i = 0; i < sccs; ++i){
+			bool first = true;
+			for(int j = 0; j < n; ++j)
+				if(circles[j] == i){
+					if(!first) printf(", ");
+					printf("%s", names[j].c_str());
+					first = false;
+				}
+			puts("");
+		}
+	}
+	return 0;
+}
 
