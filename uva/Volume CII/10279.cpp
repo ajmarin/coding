@@ -18,7 +18,7 @@ int main(void){
 				int cnt = 0;
 				for(int d = 0; d < 8; ++d){
 					int ni = i + dx[d], nj = j + dy[d];
-					cnt += (ni >= 0 && nj >= 0 && ni < 8 && nj < 8 && b[ni][nj] == '*');
+					cnt += (ni >= 0 && nj >= 0 && ni < n && nj < n && b[ni][nj] == '*');
 				}
 				putc('0' + cnt, stdout);
 			} else putc('.', stdout);
