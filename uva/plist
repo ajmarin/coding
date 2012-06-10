@@ -139,6 +139,7 @@
 445 - Marvelous Mazes
 446 - Kibbles "n" Bits "n" Bits "n" Bits
 452 - Project Scheduling
+454 - Anagrams
 455 - Periodic Strings
 458 - The Decoder
 459 - Graph Connectivity
@@ -164,6 +165,7 @@
 497 - Strategic Defense Initiative
 498 - Polly the Polynomial
 499 - What's The Frequency, Kenneth?
+501 - Black Box
 507 - Jill Rides Again
 514 - Rails
 515 - King
@@ -203,6 +205,7 @@
 623 - 500!
 624 - CD
 628 - Passwords
+630 - Anagrams (II)
 636 - Squares (III)
 637 - Booklet Printing
 639 - Don't Get Rooked
@@ -223,6 +226,7 @@
 696 - How Many Knights
 706 - LCD Display
 713 - Adding Reversed Numbers
+714 - Copying Books
 719 - Glass Beads
 725 - Division
 727 - Equation
@@ -399,6 +403,7 @@
 10364 - Square
 10369 - Arctic Network
 10370 - Above Average
+10371 - Time Zones
 10382 - Watering Grass
 10387 - Billiard
 10394 - Twin Primes
@@ -615,6 +620,7 @@
 11559 - Event Planning
 11565 - Simple Equations
 11567 - Moliu Number Generator
+11577 - Letter Frequency
 11581 - Grid Successors
 11587 - Brick Game
 11588 - Image Coding
