@@ -1,4 +1,4 @@
-100 - The 3n + 1 problem
+100 - tHE 3n + 1 problem
 101 - The Blocks Problem
 102 - Ecological Bin Packing
 103 - Stacking Boxes
@@ -93,6 +93,7 @@
 305 - Joseph
 315 - Network
 324 - Factorial Frequencies
+333 - Recognizing Good ISBNs
 336 - A Node Too Far
 340 - Master-Mind Hints
 343 - What Base Is This?
@@ -166,6 +167,7 @@
 498 - Polly the Polynomial
 499 - What's The Frequency, Kenneth?
 501 - Black Box
+505 - Moscow time
 507 - Jill Rides Again
 514 - Rails
 515 - King
@@ -250,6 +252,7 @@
 900 - Brick Wall Patterns
 902 - Password Search
 913 - Joana and the Odd Numbers
+939 - Genes
 948 - Fibonaccimal Base
 957 - Popes
 967 - Circular
