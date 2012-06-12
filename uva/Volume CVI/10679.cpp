@@ -1,5 +1,7 @@
 #include <algorithm>
+#include <cstdio>
 #include <cstring>
+using namespace std;
 
 /* {{{ Suffix array */
 #define N 104857
@@ -58,3 +60,24 @@ int find(char *hay, int L){
 	return strncmp(hay, w + pos[l].z, hl) ? -1 : l;
 }
 /* }}} */
+
+char hay[1024];
+int main(void){
+	int t; scanf("%d", &t);
+	while(t--){
+		int n, L;
+		scanf(" %s%n", w, &L);
+		w[L] = '$';
+		w[++L] = 0;
+		suffix_array(L);
+		scanf("%d", &n);
+		while(n--){
+			scanf("%s", hay);
+			if(find(hay, L) != -1) puts("y");
+			else puts("n");
+		}
+	}
+
+	return 0;
+}
+
