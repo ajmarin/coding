@@ -1,4 +1,4 @@
-100 - tHE 3n + 1 problem
+100 - The 3n + 1 problem
 101 - The Blocks Problem
 102 - Ecological Bin Packing
 103 - Stacking Boxes
@@ -431,6 +431,7 @@
 10409 - Die Game
 10420 - List of Conquests
 10424 - Love Calculator
+10427 - Naughty Sleepy Boys
 10432 - Polygon Inside A Circle
 10440 - Ferry Loading II
 10450 - World Cup Noise
@@ -489,6 +490,7 @@
 10731 - Test
 10733 - The Colored Cubes
 10763 - Foreign Exchange
+10773 - Back to Intermediate Math
 10783 - Odd Sum
 10784 - Diagonal
 10789 - Prime Frequency
@@ -547,6 +549,7 @@
 11110 - Equidivisions
 11111 - Generalized Matrioshkas
 11121 - Base -2
+11130 - Billiard bounces
 11137 - Ingenuous Cubrency
 11138 - Nuts and Bolts
 11150 - Cola
@@ -612,6 +615,7 @@
 11463 - Commandos
 11466 - Largest Prime Divisor
 11470 - Square Sums
+11475 - Extend to Palindrome
 11479 - Is this the easiest problem?
 11480 - Jimmy's Balls
 11481 - Arrange the Numbers
@@ -648,6 +652,7 @@
 11559 - Event Planning
 11565 - Simple Equations
 11567 - Moliu Number Generator
+11576 - Scrolling Sign
 11577 - Letter Frequency
 11581 - Grid Successors
 11587 - Brick Game
@@ -901,3 +906,6 @@
 12491 - Words
 12492 - Rubik Cycles
 12493 - Stars
+12502 - Three Families
+12503 - Robot Instructions
+12504 - Updating a Dictionary
