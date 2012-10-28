@@ -453,6 +453,7 @@
 10530 - Guessing Game
 10533 - Digit Primes
 10534 - Wavio Sequence
+10539 - Almost Prime Numbers
 10550 - Combination Lock
 10557 - XYZZY
 10570 - Meeting with Aliens
@@ -510,6 +511,7 @@
 10874 - Segments
 10878 - Decode the tape
 10888 - Warehouse
+10892 - LCM Cardinality
 10895 - Matrix Transpose
 10901 - Ferry Loading III
 10903 - Rock-Paper-Scissors Tournament
