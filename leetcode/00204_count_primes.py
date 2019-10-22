@@ -3,15 +3,13 @@ class Solution:
         if n <= 2:
             return 0
         prime = [True] * n
-        for i in range(4, n, 2):
-            prime[i] = False
-        count = 1
-        for i in range(3, n, 2):
+        prime[0] = 0
+        prime[1] = 0
+        for i in range(2, n):
             if not prime[i]:
                 continue
-            count += 1
-            j = i * i
-            while j < n:
+            if i * i > n:
+                break
+            for j in range(i * i, n, i):
                 prime[j] = False
-                j += i
-        return count
+        return sum(prime)
