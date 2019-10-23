@@ -1,15 +1,16 @@
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
-        if not s:
-            return ''
-        # Find the last position of each character in s
-        last_pos = [len(s)] * 32
-        a = ord('a')
+        answer = ''
+        pos = collections.defaultdict(collections.deque)
         for i, c in enumerate(s):
-            last_pos[ord(c) - a] = i
-        # Find the minimum last position mlp, so that range [mlp + 1, len(s)) has every other character.
-        # Some character in the range [0, mlp] will have to stay, otherwise we'll miss s[mlp].
-        # Since we want minimum lexicographical order, we'll take the min to preserve.
-        c = min(s[:min(last_pos) + 1])
-        # Now we simply put it in front and solve the problem for the remaining characters
-        return c + self.removeDuplicateLetters(s[s.find(c):].replace(c, ''))
+            pos[c].append(i)
+        while pos:
+            min_last = min(pos[c][-1] for c in sorted(pos))
+            c = next(c for c in sorted(pos) if pos[c][0] <= min_last)
+            trim = pos[c][0]
+            del pos[c]
+            for p in pos.values():
+                while p[0] < trim:
+                    p.popleft()
+            answer += c
+        return answer
