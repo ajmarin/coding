@@ -1,12 +1,11 @@
+def count_bits(n: int) -> int:
+    count = 0
+    while n:
+        n &= (n - 1)
+        count += 1
+    return count
+
 class Solution:
     def kthCharacter(self, k: int) -> str:
-        word = [0] * k
-        pos = 1
-        while pos < k:
-            for n in word[:pos]:
-                word[pos] = n + 1
-                pos += 1
-                if pos == k:
-                    break
-        return chr(word[k - 1] + ord('a'))
+        return chr(ord('a') + count_bits(k - 1))
 
