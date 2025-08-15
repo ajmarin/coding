@@ -1,9 +1,7 @@
 class Solution:
-    def isPowerOfFour(self, num: int) -> bool:
-        while num:
-            if num == 1:
-                return True
-            if num & 3:
-                break
-            num >>= 2
-        return False
+    def isPowerOfFour(self, n: int) -> bool:
+        if n == 0: return False
+        while not n & 3:
+            n >>= 2
+        return n == 1
+
