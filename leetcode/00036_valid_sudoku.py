@@ -1,22 +1,20 @@
+ORD0 = ord('0')
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        rseen = [0] * 9
-        cseen = [0] * 9
-        sseen = [0] * 9
-        for i in range(9):
-            for j in range(9):
-                v = board[i][j]
-                if v == '.':
-                    continue
-                ordv = 1 << (ord(v) - ord('1'))
-                s = 3 * (i // 3) + (j // 3)
-                if rseen[i] & ordv:
-                    return False
-                if cseen[j] & ordv:
-                    return False
-                if sseen[s] & ordv:
-                    return False
-                rseen[i] |= ordv
-                cseen[j] |= ordv
-                sseen[s] |= ordv
+        row_mask = [0] * 9
+        col_mask = [0] * 9
+        box_mask = [0] * 9
+        for i, row in enumerate(board):
+            for j, val in enumerate(row):
+                if val != '.':
+                    bit = 1 << (ord(val) - ORD0)
+                    if row_mask[i] & bit: return False
+                    row_mask[i] |= bit
+                    if col_mask[j] & bit: return False
+                    col_mask[j] |= bit
+                    box = 3 * (i // 3) + (j // 3)
+                    if box_mask[box] & bit: return False
+                    box_mask[box] |= bit
         return True
+
