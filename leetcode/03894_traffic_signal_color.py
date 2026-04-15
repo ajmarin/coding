@@ -1,0 +1,7 @@
+class Solution:
+    def trafficSignal(self, timer: int) -> str:
+        if timer == 0:
+            return "Green"
+        if timer == 30:
+            return "Orange"
+        return "Red" if 30 < timer <= 90 else "Invalid"
