@@ -7,7 +7,4 @@ class Solution:
             prefix_sum += nums[i]
 
         nums_set = set(nums)
-        for ans in range(prefix_sum, 10000):
-            if ans not in nums_set:
-                break
-        return ans
+        return next(x for x in range(prefix_sum, 10_000) if x not in nums_set)
